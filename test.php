@@ -83,7 +83,7 @@ if ($argc === 4) {
                 $result->memoryMb = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/', '\\1', $output) / 1024;
                 $results[]        = $result;
             } else {
-                echo "$cmd failed\n";
+                echo "$cmd failed. Output:\n$output\n";
             }
         }
     }
