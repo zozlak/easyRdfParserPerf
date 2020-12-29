@@ -32,8 +32,8 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-if ($argc !== 4 && $argc !== 0) {
-    echo "$argv[0] [class dataFile outputFile]
+if ($argc !== 4 && $argc !== 1) {
+    exit("$argv[0] [class dataFile outputFile]
         
 Performs EasyRdf backend tests
 
@@ -47,7 +47,7 @@ Can be called in two ways:
    `php -f test.php '\\EasyRdf\\ParserPerfTest\\EasyRdf' data/puzzle4d_100k.ttl out.json`. 
    In such a case a given class is tested on a given data file with
    JSON output being written to a given file.
-";
+");
 }
 
 require_once __DIR__ . '/vendor/autoload.php';
