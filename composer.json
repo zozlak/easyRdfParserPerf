@@ -6,7 +6,8 @@
     "homepage": "https://github.com/zozlak/EasyRdfParserPerf",
     "license": "BSD-3-Clause",
     "require": {
-        "easyrdf/easyrdf": "*"
+        "easyrdf/easyrdf": "*",
+        "guzzlehttp/guzzle": "^7.2"
     },
     "autoload": {
         "psr-4": {
