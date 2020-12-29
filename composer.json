@@ -1,0 +1,16 @@
+{
+    "name": "zozlak/easyrdf-parser-perf",
+    "type": "library",
+    "description": "A framework and set of tests for comparing possible EasyRdf parser backends performance",
+    "keywords": [],
+    "homepage": "https://github.com/zozlak/EasyRdfParserPerf",
+    "license": "BSD-3-Clause",
+    "require": {
+        "easyrdf/easyrdf": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "EasyRdf\\": "src/EasyRdf"
+        }
+    }
+}
