@@ -75,12 +75,14 @@ if ($argc === 4) {
             if (file_exists($outputFile)) {
                 unlink($outputFile);
             }
-            $cmd    = "/usr/bin/time -v php -f $php $classE $dataFileE $outputFileE 2>&1 | grep 'Maximum resident set size'";
+            $cmd    = "/usr/bin/time -v php -f $php $classE $dataFileE $outputFileE 2>&1";
             $output = trim(shell_exec($cmd));
             if (file_exists($outputFile)) {
                 $result           = json_decode(file_get_contents($outputFile));
                 unlink($outputFile);
-                $result->memoryMb = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/', '\\1', $output) / 1024;
+                $output           = str_replace("\n", ' ', $output);
+                $memStr           = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/m', '\\1', $output);
+                $result->memoryMb = $memStr / 1024;
                 $results[]        = $result;
             } else {
                 echo "$cmd failed. Output:\n$output\n";
