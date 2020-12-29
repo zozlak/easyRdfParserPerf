@@ -65,21 +65,27 @@ if ($argc === 4) {
 } else {
     $results = [];
     foreach ($test->getClasses(__DIR__ . '/src/EasyRdf/ParserPerfTest', '\\EasyRdf\\ParserPerfTest') as $class) {
-        $obj = new $class();
+        $obj    = new $class();
+        $classE = escapeshellarg($class);
         foreach ($test->getDataFiles(__DIR__ . '/data', $obj) as $dataFile) {
-            $php              = escapeshellarg(__FILE__);
-            $class            = escapeshellarg($class);
-            $dataFile         = escapeshellarg($dataFile);
-            $outputFile       = escapeshellarg(__DIR__ . '/tmp.json');
-            $cmd              = "/usr/bin/time -v php -f $php $class $dataFile $outputFile 2>&1 | grep 'Maximum resident set size'";
-            $output           = trim(shell_exec($cmd));
-            $result           = json_decode(file_get_contents(__DIR__ . '/tmp.json'));
-            $result->memoryMb = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/', '\\1', $output) / 1024;
-            $results[]        = $result;
+            $php         = escapeshellarg(__FILE__);
+            $dataFileE   = escapeshellarg($dataFile);
+            $outputFile  = __DIR__ . '/tmp.json';
+            $outputFileE = escapeshellarg($outputFile);
+            if (file_exists($outputFile)) {
+                unlink($outputFile);
+            }
+            $cmd    = "/usr/bin/time -v php -f $php $classE $dataFileE $outputFileE 2>&1 | grep 'Maximum resident set size'";
+            $output = trim(shell_exec($cmd));
+            if (file_exists($outputFile)) {
+                $result           = json_decode(file_get_contents($outputFile));
+                unlink($outputFile);
+                $result->memoryMb = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/', '\\1', $output) / 1024;
+                $results[]        = $result;
+            } else {
+                echo "$cmd failed\n";
+            }
         }
     }
     echo json_encode($results, JSON_PRETTY_PRINT);
-    if (file_exists($outputFile)) {
-        unlink($outputFile);
-    }
 }
