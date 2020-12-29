@@ -47,9 +47,9 @@ class EasyRdf implements ParserPerfTestInterface {
         
     }
 
-    public function parse(string $filePath, string $format = null): \EasyRdf\Graph {
+    public function parse(string $filePath): \EasyRdf\Graph {
         $graph = new Graph();
-        $graph->parseFile($filePath, $format);
+        $graph->parseFile($filePath);
         return $graph;
     }
 

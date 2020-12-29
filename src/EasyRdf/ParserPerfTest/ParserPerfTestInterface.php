@@ -42,9 +42,27 @@ use EasyRdf\Graph;
  */
 interface ParserPerfTestInterface {
 
+    /**
+     * Every implementation should provide a constructor which requires
+     * no parameters.
+     */
     public function __construct();
 
-    public function parse(string $filePath, string $format = null): Graph;
+    /**
+     * Parses a given RDF file and returns an EasyRdf\Graph object.
+     * 
+     * @param string $filePath path to the RDF file. If the implementation 
+     *   handles many RDF formats it must be able to guess the format from the
+     *   file extension.
+     * @return Graph
+     */
+    public function parse(string $filePath): Graph;
 
+    /**
+     * Returns a list of file extensions indicating RDF serialization formats
+     * supported by an implementation (e.g. ['ttl', 'xml']).
+     * 
+     * @return string[]
+     */
     public function getSupportedFileExtensions(): array;
 }

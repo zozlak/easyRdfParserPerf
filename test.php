@@ -1,5 +1,5 @@
+#!/usr/bin/php
 <?php
-
 /*
  * BSD 3-Clause License
  * 
@@ -32,6 +32,24 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+if ($argc !== 4 && $argc !== 0) {
+    echo "$argv[0] [class dataFile outputFile]
+        
+Performs EasyRdf backend tests
+
+Can be called in two ways:
+
+1. Without parameters. In such a case all classes implementing 
+   the `ParserPerfTestInterface` in the `src/EasyRdf/ParserPerfTest`
+   directory are tested on all matching data from the `data` directory
+   and the JSON output is written on the standard output.
+2. With parameters, e.g. 
+   `php -f test.php '\\EasyRdf\\ParserPerfTest\\EasyRdf' data/puzzle4d_100k.ttl out.json`. 
+   In such a case a given class is tested on a given data file with
+   JSON output being written to a given file.
+";
+}
+
 require_once __DIR__ . '/vendor/autoload.php';
 
 $test = new EasyRdf\ParserPerfTest\Test();
@@ -49,16 +67,19 @@ if ($argc === 4) {
     foreach ($test->getClasses(__DIR__ . '/src/EasyRdf/ParserPerfTest', '\\EasyRdf\\ParserPerfTest') as $class) {
         $obj = new $class();
         foreach ($test->getDataFiles(__DIR__ . '/data', $obj) as $dataFile) {
-            $php = escapeshellarg(__FILE__);
-            $class = escapeshellarg($class);
-            $dataFile = escapeshellarg($dataFile);
-            $outputFile = escapeshellarg(__DIR__ . '/tmp.json');
-            $cmd = "/usr/bin/time -v php -f $php $class $dataFile $outputFile 2>&1 | grep 'Maximum resident set size'";
-            $output = trim(shell_exec($cmd));
-            $result= json_decode(file_get_contents(__DIR__ . '/tmp.json'));
+            $php              = escapeshellarg(__FILE__);
+            $class            = escapeshellarg($class);
+            $dataFile         = escapeshellarg($dataFile);
+            $outputFile       = escapeshellarg(__DIR__ . '/tmp.json');
+            $cmd              = "/usr/bin/time -v php -f $php $class $dataFile $outputFile 2>&1 | grep 'Maximum resident set size'";
+            $output           = trim(shell_exec($cmd));
+            $result           = json_decode(file_get_contents(__DIR__ . '/tmp.json'));
             $result->memoryMb = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/', '\\1', $output) / 1024;
-            $results[] = $result;
+            $results[]        = $result;
         }
     }
     echo json_encode($results, JSON_PRETTY_PRINT);
+    if (file_exists($outputFile)) {
+        unlink($outputFile);
+    }
 }
