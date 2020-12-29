@@ -47,5 +47,6 @@ class TestResult {
     public $triplesCount;
     public $memoryMb;
     public $dataFileSizeMb;
+    public $errorMsg;
 
 }

@@ -77,15 +77,21 @@ if ($argc === 4) {
             }
             $cmd    = "/usr/bin/time -v php -f $php $classE $dataFileE $outputFileE 2>&1";
             $output = trim(shell_exec($cmd));
+            $memory = str_replace("\n", ' ', $output);
+            $memory = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/m', '\\1', $memory);
+            $memory = $memory / 1024;
             if (file_exists($outputFile)) {
                 $result           = json_decode(file_get_contents($outputFile));
                 unlink($outputFile);
-                $output           = str_replace("\n", ' ', $output);
-                $memStr           = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/m', '\\1', $output);
-                $result->memoryMb = $memStr / 1024;
+                $result->memoryMb = $memory;
                 $results[]        = $result;
             } else {
-                echo "$cmd failed. Output:\n$output\n";
+                $result           = new EasyRdf\ParserPerfTest\TestResult();
+                $result->class    = get_class($obj);
+                $result->dataFile = basename($dataFile);
+                $result->memoryMb = $memory;
+                $result->errorMsg = substr($output, 0, strpos($output, "\nCommand exited with"));
+                $results[]        = $result;
             }
         }
     }
