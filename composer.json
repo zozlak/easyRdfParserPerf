@@ -7,7 +7,8 @@
     "license": "BSD-3-Clause",
     "require": {
         "easyrdf/easyrdf": "*",
-        "guzzlehttp/guzzle": "^7.2"
+        "guzzlehttp/guzzle": "^7.2",
+        "pietercolpaert/hardf": "*"
     },
     "autoload": {
         "psr-4": {
