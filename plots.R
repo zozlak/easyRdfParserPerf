@@ -1,5 +1,6 @@
-.libPaths()
-install.packages(setdiff(c('dplyr', 'jsonlite', 'ggplot2', 'magrittr', 'svglite'), installed.packages()[, 'Package']))
+localLib = paste0(getwd(), '/R')
+.libPaths(c(localLib, .libPaths()))
+install.packages(setdiff(c('dplyr', 'jsonlite', 'ggplot2', 'magrittr', 'svglite'), installed.packages()[, 'Package']), localLib)
 library(magrittr)
 data = jsonlite::read_json('output/data.json', simplifyVector = TRUE) %>%
   dplyr::as_tibble() %>%
