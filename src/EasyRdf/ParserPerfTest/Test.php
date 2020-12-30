@@ -47,9 +47,7 @@ class Test {
 
     public function testObject(ParserPerfTestInterface $implementation,
                                string $dataPath): TestResult {
-        $result                 = new TestResult();
-        $result->class          = get_class($implementation);
-        $result->dataFile       = basename($dataPath);
+        $result                 = new TestResult(get_class($implementation), basename($dataPath));
         $result->dataFileSizeMb = filesize($dataPath) / 1024 / 1024;
         $t                      = microtime(true);
         $graph                  = $implementation->parse($dataPath);

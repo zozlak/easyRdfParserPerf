@@ -49,4 +49,9 @@ class TestResult {
     public $dataFileSizeMb;
     public $errorMsg;
 
+    public function __construct(string $class = null, string $dataFile = null) {
+        $this->class    = $class;
+        $this->dataFile = $dataFile;
+    }
+
 }
