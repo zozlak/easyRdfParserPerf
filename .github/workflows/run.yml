@@ -3,7 +3,7 @@ name: run
 on: push
 
 jobs:
-  run:
+  small:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -13,6 +13,32 @@ jobs:
     - name: composer update
       run: composer update
     - name: test
-      run: php -f test.php -- --runs 3
+      run: php -f test.php -- --data data/small --runs 10
     - name: test old EasyRdf
-      run: php -f testOldReleases.php
+      run: php -f testOldReleases.php -- --data data/small --runs 10
+  medium:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+    - name: composer update
+      run: composer update
+    - name: test
+      run: php -f test.php -- --data data/medium --runs 1
+    - name: test old EasyRdf
+      run: php -f testOldReleases.php -- --data data/medium --runs 1
+  big:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+    - name: composer update
+      run: composer update
+    - name: test
+      run: php -f test.php -- --data data/big --runs 1
+    - name: test old EasyRdf
+      run: php -f testOldReleases.php -- --data data/big --runs 1

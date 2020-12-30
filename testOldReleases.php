@@ -32,25 +32,25 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-if ($argc !== 1 && !preg_match('/^[0-9][.][0-9][.][0-9]$/', $argv[1] ?? '')) {
-    echo "$argv[0] [release]
-
-Runs test.php on old EasyRdf releases
-        
-- Only releases >=1.0.0 are supported.
-- If no release number is supported, all releases >= 1.0.0. are tested
-";
-}
-
-require_once __DIR__ . '/vendor/autoload.php';
+/**
+ * testOldReleases.php [release] [test.php parameters]
+ *
+ * Runs test.php on old EasyRdf releases
+ * 
+ * - Only releases >=1.0.0 are supported.
+ * - If no release number is supported, all releases >= 1.0.0. are tested
+ */
+const VERSION_REGEX = '/^[0-9][.][0-9][.][0-9]$/';
 const MIN_VERSION = '1.0.0';
 const REPO_URL = 'https://api.github.com/repos/easyrdf/easyrdf/releases';
 
-$test = new EasyRdf\ParserPerfTest\Test();
+require_once __DIR__ . '/vendor/autoload.php';
 
-if ($argc === 2) {
+if (preg_match(VERSION_REGEX, $argv[1] ?? '')) {
     $versions = [$argv[1]];
+    $firstParam = 2;
 } else {
+    $firstParam = 1;
     $client   = new GuzzleHttp\Client();
     $headers  = ['Accept' => 'application/vnd.github.v3+json'];
     $request  = new GuzzleHttp\Psr7\Request('get', REPO_URL, $headers);
@@ -65,8 +65,14 @@ if ($argc === 2) {
         }
     }
 }
+$test = new EasyRdf\ParserPerfTest\Test();
 
 foreach ($versions as $version) {
     echo "# $version\n";
-    echo shell_exec("composer require easyrdf/easyrdf:$version >/dev/null 2>&1 && php -f test.php -- --class 'EasyRdf\ParserPerfTest\EasyRdf'") . "\n";
+    $cmd = "composer require easyrdf/easyrdf:$version >/dev/null 2>&1 ";
+    $cmd .= "&& php -f test.php -- --class 'EasyRdf\ParserPerfTest\EasyRdf'";
+    for ($i = $firstParam; $i < $argc; $i++) {
+        $cmd .= ' ' . escapeshellarg($argv[$i]);
+    }
+    echo shell_exec($cmd) . "\n";
 }

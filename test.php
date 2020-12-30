@@ -57,7 +57,7 @@ $param       = (object) $param;
 $param->runs = (int) $param->runs;
 
 if ($param->help) {
-    exit("$argv[0] [--class class] [--data dataFile] [--runs N] [--output filePath] [--help]
+    exit("$argv[0] [--class class] [--data dataFileOrDir] [--runs N] [--output filePath] [--help]
         
 Performs EasyRdf backend tests.
 Outputs test results as a JSON array.
@@ -92,8 +92,8 @@ if ($param->class !== null && $param->data !== null && $param->runs === 1) {
     foreach ($param->class as $class) {
         $obj    = new $class();
         $classE = escapeshellarg($class);
-        if ($param->data === null) {
-            $dataFiles = $test->getDataFiles(__DIR__ . '/data', $obj);
+        if ($param->data === null || is_dir($param->data)) {
+            $dataFiles = $test->getDataFiles($param->data ?? __DIR__ . '/data', $obj);
         } else {
             $dataFiles = [$param->data];
         }
