@@ -34,7 +34,7 @@ Results are a JSON table of each test metrics, e.g.:
 
 ### Providing additional test data
 
-Just add a data file to the `data` directory.
+Just add a data file to the right `data/{dataSize}` directory.
 
 Remarks:
 
