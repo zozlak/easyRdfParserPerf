@@ -77,7 +77,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 $test = new EasyRdf\ParserPerfTest\Test();
 
-if ($param->class !== null && $param->data !== null && $param->runs === 1) {
+if ($param->class !== null && is_file($param->data ?? '') && $param->runs === 1) {
     $result = $test->testClass($param->class, $param->data);
     file_put_contents($param->output, json_encode([$result], JSON_PRETTY_PRINT));
 } else {
@@ -108,9 +108,7 @@ if ($param->class !== null && $param->data !== null && $param->runs === 1) {
                 }
                 $cmd    = "/usr/bin/time -v php -f $php -- --class $classE --data $dataFileE --runs 1 --output $outputFileE 2>&1";
                 $output = trim(shell_exec($cmd));
-                $memory = str_replace("\n", ' ', $output);
-                $memory = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/m', '\\1', $memory);
-                $memory = $memory / 1024;
+                $memory = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/sm', '\\1', $output) / 1024;
                 if (file_exists($outputFile)) {
                     $result = json_decode(file_get_contents($outputFile))[0];
                     unlink($outputFile);
