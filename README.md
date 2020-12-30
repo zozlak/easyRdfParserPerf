@@ -43,7 +43,7 @@ Remarks:
 ### Providing additional backends
 
 Write a class implementing the `\EasyRdf\ParserPerfTest\ParserPerfTestInterface`
-(see [here](https://github.com/zozlak/easyRdfParserPerf/blob/main/src/EasyRdf/ParserPerfTest/ParserPerfTestInterface.php))
+(see [here](https://github.com/zozlak/easyRdfParserPerf/blob/master/src/EasyRdf/ParserPerfTest/ParserPerfTestInterface.php))
 and assure it's autoloadable
 (e.g. give it the `EasyRdf\ParserPerfTest` namespace and save it in `src\EasyRdf\ParserPerfTest\YourClassName.php`).
 
