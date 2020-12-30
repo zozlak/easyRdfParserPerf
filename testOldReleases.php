@@ -68,5 +68,5 @@ if ($argc === 2) {
 
 foreach ($versions as $version) {
     echo "# $version\n";
-    echo shell_exec(sprintf("composer require easyrdf/easyrdf:%s >/dev/null 2>&1 && php -f test.php", $version)) . "\n";
+    echo shell_exec("composer require easyrdf/easyrdf:$version >/dev/null 2>&1 && php -f test.php -- --class 'EasyRdf\ParserPerfTest\EasyRdf'") . "\n";
 }
