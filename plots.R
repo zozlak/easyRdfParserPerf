@@ -1,4 +1,4 @@
-localLib = paste0(getwd(), '/R')
+localLib = path.expand('~/R')
 dir.create(localLib)
 .libPaths(c(localLib, .libPaths()))
 install.packages(setdiff(c('dplyr', 'jsonlite', 'ggplot2', 'magrittr', 'svglite'), installed.packages()[, 'Package']), localLib)

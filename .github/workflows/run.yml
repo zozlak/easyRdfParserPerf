@@ -10,6 +10,11 @@ jobs:
     - uses: shivammathur/setup-php@v2
       with:
         php-version: '7.4'
+    - name: cache R packages
+      uses: actions/cache@v2
+      with:
+        path: ~/R
+        key: R
     - name: composer update
       run: composer update
     - name: test
@@ -23,6 +28,7 @@ jobs:
     - name: store artifacts
       uses: actions/upload-artifact@v2
       with:
+        name: small-test-results
         path: output
 #  medium:
 #    runs-on: ubuntu-latest
