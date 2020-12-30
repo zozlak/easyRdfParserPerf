@@ -13,6 +13,6 @@ jobs:
     - name: composer update
       run: composer update
     - name: test
-      run: php -f test.php --runs 3
+      run: php -f test.php -- --runs 3
     - name: test old EasyRdf
       run: php -f testOldReleases.php
