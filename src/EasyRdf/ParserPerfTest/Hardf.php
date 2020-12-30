@@ -34,6 +34,7 @@
 
 namespace EasyRdf\ParserPerfTest;
 
+use Exception;
 use RuntimeException;
 use EasyRdf\Graph;
 use EasyRdf\Literal;
@@ -65,25 +66,25 @@ class Hardf implements ParserPerfTestInterface {
     public function parse(string $filePath): Graph {
         $graph = new Graph();
         $parser = $this->getParser($filePath, $graph);
-        $parser->parse(file_get_contents($filePath));
+        $parser->parseChunk(file_get_contents($filePath));
         $parser->end();
         return $graph;
     }
 
     protected function getParser(string $filePath, Graph $graph): TriGParser {
-        $tripleHandler = function($error, $triple) use ($graph) {
+        $tripleHandler = function(?Exception $error, ?array $triple) use ($graph) {
             if ($triple) {
                 if (substr($triple['object'], 0, 1) !== '"') {
                     $object = $graph->resource($triple['object']);
                 } else {
-                    $value    = Util::getLiteralValue($triple['object']);
+                    $value    = substr($triple['object'], 1, strrpos($triple['object'], '"') - 1); // as Util::getLiteralValue() doesn't work for multiline values
                     $lang     = Util::getLiteralLanguage($triple['object']);
                     $datatype = Util::getLiteralType($triple['object']);
                     $object   = new Literal($value, $lang, $datatype);
                 }
                 $graph->add($triple['subject'], $triple['predicate'], $object);
-            } else {
-                throw new RuntimeException($error);
+            } elseif ($error !== null) {
+                throw $error;
             }
         };
         $options = ['format' => $this->getFormat($filePath)];
