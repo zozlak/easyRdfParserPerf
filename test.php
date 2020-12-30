@@ -32,68 +32,98 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-if ($argc !== 4 && $argc !== 1) {
-    exit("$argv[0] [class dataFile outputFile]
+$param = [
+    'class'  => null,
+    'data'   => null,
+    'runs'   => 1,
+    'output' => 'php://stdout',
+    'help'   => false
+];
+for ($i = 1; $i < count($argv); $i++) {
+    $v = $argv[$i];
+    $p = substr($v, 2);
+    if (substr($v, 0, 2) !== '--' || !key_exists($p, $param)) {
+        $param['help'] = true;
+        break;
+    }
+    if (is_bool($param[$p])) {
+        $param[$p] = !$param[$p];
+    } else {
+        $i++;
+        $param[$p] = $argv[$i];
+    }
+}
+$param       = (object) $param;
+$param->runs = (int) $param->runs;
+
+if ($param->help) {
+    exit("$argv[0] [--class class] [--data dataFile] [--runs N] [--output filePath] [--help]
         
-Performs EasyRdf backend tests
+Performs EasyRdf backend tests.
+Outputs test results as a JSON array.
 
-Can be called in two ways:
-
-1. Without parameters. In such a case all classes implementing 
-   the `ParserPerfTestInterface` in the `src/EasyRdf/ParserPerfTest`
-   directory are tested on all matching data from the `data` directory
-   and the JSON output is written on the standard output.
-2. With parameters, e.g. 
-   `php -f test.php '\\EasyRdf\\ParserPerfTest\\EasyRdf' data/puzzle4d_100k.ttl out.json`. 
-   In such a case a given class is tested on a given data file with
-   JSON output being written to a given file.
+- If --class is not specified, all classes implementing the 
+  `ParserPerfTestInterface` in the `src/EasyRdf/ParserPerfTest` directory 
+  are tested
+- If --dataFile is not specified, all datafiles from the `data` directory 
+  are used
+- If --runs is not specified, every test (being a combination of a class and
+  a data file) is run once
+- If --output is not specified, the JSON output is printed on the stdout.
 ");
 }
 
 require_once __DIR__ . '/vendor/autoload.php';
 
 $test = new EasyRdf\ParserPerfTest\Test();
-if ($argc === 4) {
-    try {
-        $results = $test->testClass($argv[1], $argv[2]);
-        file_put_contents($argv[3], json_encode($results));
-    } catch (BadMethodCallException $e) {
-        if (file_exists($argv[3])) {
-            unlink($argv[3]);
-        }
-    }
+
+if ($param->class !== null && $param->data !== null && $param->runs === 1) {
+    $result = $test->testClass($param->class, $param->data);
+    file_put_contents($param->output, json_encode([$result], JSON_PRETTY_PRINT));
 } else {
-    $results = [];
-    foreach ($test->getClasses(__DIR__ . '/src/EasyRdf/ParserPerfTest', '\\EasyRdf\\ParserPerfTest') as $class) {
+    $param->output = fopen($param->output, 'w');
+    fwrite($param->output, "[\n");
+    if ($param->class === null) {
+        $param->class = $test->getClasses(__DIR__ . '/src/EasyRdf/ParserPerfTest', '\\EasyRdf\\ParserPerfTest');
+    } else {
+        $param->class = [$param->class];
+    }
+    $N = 0;
+    foreach ($param->class as $class) {
         $obj    = new $class();
         $classE = escapeshellarg($class);
-        foreach ($test->getDataFiles(__DIR__ . '/data', $obj) as $dataFile) {
-            $php         = escapeshellarg(__FILE__);
-            $dataFileE   = escapeshellarg($dataFile);
-            $outputFile  = __DIR__ . '/tmp.json';
-            $outputFileE = escapeshellarg($outputFile);
-            if (file_exists($outputFile)) {
-                unlink($outputFile);
-            }
-            $cmd    = "/usr/bin/time -v php -f $php $classE $dataFileE $outputFileE 2>&1";
-            $output = trim(shell_exec($cmd));
-            $memory = str_replace("\n", ' ', $output);
-            $memory = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/m', '\\1', $memory);
-            $memory = $memory / 1024;
-            if (file_exists($outputFile)) {
-                $result           = json_decode(file_get_contents($outputFile));
-                unlink($outputFile);
+        if ($param->data === null) {
+            $dataFiles = $test->getDataFiles(__DIR__ . '/data', $obj);
+        } else {
+            $dataFiles = [$param->data];
+        }
+        foreach ($dataFiles as $dataFile) {
+            for ($i = 0; $i < $param->runs; $i++) {
+                $php         = escapeshellarg(__FILE__);
+                $dataFileE   = escapeshellarg($dataFile);
+                $outputFile  = __DIR__ . '/tmp.json';
+                $outputFileE = escapeshellarg($outputFile);
+                if (file_exists($outputFile)) {
+                    unlink($outputFile);
+                }
+                $cmd    = "/usr/bin/time -v php -f $php -- --class $classE --data $dataFileE --runs 1 --output $outputFileE 2>&1";
+                $output = trim(shell_exec($cmd));
+                $memory = str_replace("\n", ' ', $output);
+                $memory = preg_replace('/^.*Maximum resident set size [(]kbytes[)]: ([0-9]+).*$/m', '\\1', $memory);
+                $memory = $memory / 1024;
+                if (file_exists($outputFile)) {
+                    $result = json_decode(file_get_contents($outputFile))[0];
+                    unlink($outputFile);
+                } else {
+                    $result           = new EasyRdf\ParserPerfTest\TestResult(get_class($obj), basename($dataFile));
+                    $result->errorMsg = substr($output, 0, strpos($output, "\nCommand exited with"));
+                }
                 $result->memoryMb = $memory;
-                $results[]        = $result;
-            } else {
-                $result           = new EasyRdf\ParserPerfTest\TestResult();
-                $result->class    = get_class($obj);
-                $result->dataFile = basename($dataFile);
-                $result->memoryMb = $memory;
-                $result->errorMsg = substr($output, 0, strpos($output, "\nCommand exited with"));
-                $results[]        = $result;
+                fwrite($param->output, ($N > 0 ? ",\n" : '') . json_encode($result, JSON_PRETTY_PRINT | JSON_INVALID_UTF8_IGNORE));
+                $N++;
             }
         }
     }
-    echo json_encode($results, JSON_PRETTY_PRINT);
+    fwrite($param->output, "\n]\n");
+    fclose($param->output);
 }
