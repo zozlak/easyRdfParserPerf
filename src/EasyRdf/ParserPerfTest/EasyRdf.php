@@ -43,18 +43,27 @@ use EasyRdf\Graph;
  */
 class EasyRdf implements ParserPerfTestInterface {
 
+    static private $formats = [
+        'ttl'      => 'text/turtle',
+        'ntriples' => 'application/ntriples',
+        'xml'      => 'text/xml',
+    ];
+
     public function __construct() {
         
     }
 
     public function parse(string $filePath): \EasyRdf\Graph {
+        $fileName = basename($filePath);
+        $ext      = substr($fileName, strrpos($fileName, '.') + 1);
+
         $graph = new Graph();
-        $graph->parseFile($filePath);
+        $graph->parseFile($filePath, self::$formats[$ext]);
         return $graph;
     }
 
     public function getSupportedFileExtensions(): array {
-        return ['ttl', 'xml', 'json'];
+        return ['ttl', 'xml', 'ntriples'];
     }
 
 }
