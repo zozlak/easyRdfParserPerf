@@ -38,7 +38,7 @@ plot = data %>% ggplot2::ggplot(ggplot2::aes(x = test, y = triplesPerSecond, col
   ggplot2::theme_light()
 ggplot2::ggsave('output/troughput.svg', plot, 'svg', width = 10, height = 10)
 plot = data %>% ggplot2::ggplot(ggplot2::aes(x = test, y = memoryMb, color = class)) +
-  plotfun +
+  plotfun() +
   ggplot2::ggtitle('Memory usage') +
   ggplot2::facet_wrap(dplyr::vars(format), ncol = 1) +
   ggplot2::theme_light()
