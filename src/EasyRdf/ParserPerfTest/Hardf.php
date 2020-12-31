@@ -79,7 +79,7 @@ class Hardf implements ParserPerfTestInterface {
                 } else {
                     $value    = substr($triple['object'], 1, strrpos($triple['object'], '"') - 1); // as Util::getLiteralValue() doesn't work for multiline values
                     $lang     = Util::getLiteralLanguage($triple['object']);
-                    $datatype = Util::getLiteralType($triple['object']);
+                    $datatype = empty($lang) ? Util::getLiteralType($triple['object']) : null;
                     $object   = new Literal($value, $lang, $datatype);
                 }
                 $graph->add($triple['subject'], $triple['predicate'], $object);
