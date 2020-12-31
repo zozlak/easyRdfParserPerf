@@ -34,8 +34,6 @@ jobs:
       run: php -f test.php -- --data data/medium --runs 1 | tee data-medium.json
     - name: test old EasyRdf
       run: php -f testOldReleases.php -- --data data/medium --runs 1 | tee data-medium-old.json
-    - name: plots
-      run: Rscript plots.R
     - name: store artifacts
       uses: actions/upload-artifact@v2
       with:
