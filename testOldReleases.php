@@ -74,5 +74,9 @@ foreach ($versions as $version) {
     for ($i = $firstParam; $i < $argc; $i++) {
         $cmd .= ' ' . escapeshellarg($argv[$i]);
     }
-    echo shell_exec($cmd) . "\n";
+    $data = json_decode(shell_exec($cmd));
+    foreach ($data as $i) {
+        $i->class .= "-$version";
+    }
+    echo json_encode($data, JSON_PRETTY_PRINT | JSON_INVALID_UTF8_IGNORE) . "\n";
 }
