@@ -60,6 +60,8 @@ jobs:
 #        name: big-test-results
 #        path: data-*.json
   charts:
+    needs:
+    - small
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
