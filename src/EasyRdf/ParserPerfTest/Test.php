@@ -81,6 +81,11 @@ class Test {
             if ($i->isFile() && ($supported === null || in_array($i->getExtension(), $supported))) {
                 yield $i->getPathname();
             }
+            if ($i->isDir() && !$i->isDot()) {
+                foreach ($this->getDataFiles($i->getPathname(), $implementation) as $j) {
+                    yield $j;
+                }
+            }
         }
     }
 
