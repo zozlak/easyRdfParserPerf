@@ -69,9 +69,10 @@ jobs:
         path: ~/R
         key: R
     - uses: actions/download-artifact@master
+      name: small-test-results
     - run: ls -1
-    - name: plots
-      run: Rscript plots.R
+#    - name: plots
+#      run: Rscript plots.R
 #    - name: store artifacts
 #      uses: actions/upload-artifact@v2
 #      with:
