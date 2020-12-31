@@ -16,8 +16,6 @@ jobs:
       run: php -f test.php -- --data data/small --runs 10 | tee data-small.json
     - name: test old EasyRdf
       run: php -f testOldReleases.php -- --data data/small --runs 10 | tee data-small-old.json
-    - name: plots
-      run: Rscript plots.R
     - name: store artifacts
       uses: actions/upload-artifact@v2
       with:
@@ -64,6 +62,7 @@ jobs:
   charts:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: cache R packages
       uses: actions/cache@v2
       with:
@@ -73,9 +72,9 @@ jobs:
     - run: ls -1
     - name: plots
       run: Rscript plots.R
-    - name: store artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: charts
-        path: "*.svg"
+#    - name: store artifacts
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: charts
+#        path: "*.svg"
       
