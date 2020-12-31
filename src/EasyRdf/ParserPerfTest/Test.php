@@ -34,7 +34,9 @@
 
 namespace EasyRdf\ParserPerfTest;
 
+use RuntimeException;
 use DirectoryIterator;
+use EasyRdf\Graph;
 
 /**
  * Runs a set of tests
@@ -43,7 +45,10 @@ use DirectoryIterator;
  */
 class Test {
 
-    const TEST_INTERFACE = ParserPerfTestInterface::class;
+    const VALIDATE_SUBJECT        = 'https://technical#subject';
+    const VALIDATE_TRIPLES_COUNT  = 'https://technical#tripleCount';
+    const VALIDATE_RESOURCE_COUNT = 'https://technical#resourceCount';
+    const TEST_INTERFACE          = ParserPerfTestInterface::class;
 
     public function testObject(ParserPerfTestInterface $implementation,
                                string $dataPath): TestResult {
@@ -53,6 +58,9 @@ class Test {
         $graph                  = $implementation->parse($dataPath);
         $result->time           = microtime(true) - $t;
         $result->triplesCount   = $graph->countTriples();
+
+        $this->validateGraph($graph);
+
         return $result;
     }
 
@@ -80,6 +88,28 @@ class Test {
         foreach (new DirectoryIterator($dataDir) as $i) {
             if ($i->isFile() && ($supported === null || in_array($i->getExtension(), $supported))) {
                 yield $i->getPathname();
+            }
+        }
+    }
+
+    /**
+     * 
+     * @param \EasyRdf\Graph $graph
+     * @return void
+     */
+    private function validateGraph(Graph $graph): void {
+        $res = $graph->resource(self::VALIDATE_SUBJECT);
+        if ($res) {
+            $expCount = (int)((string) $res->getLiteral('<' . self::VALIDATE_TRIPLES_COUNT . '>'));
+            $actCount = $graph->countTriples();
+            if ($expCount && $expCount !== $actCount) {
+                throw new RuntimeException("Parsed triples count of $actCount doesn't match expected count of $expCount");
+            }
+
+            $expCount = (int)((string) $res->getLiteral('<' . self::VALIDATE_RESOURCE_COUNT . '>'));
+            $actCount = count($graph->resources());
+            if ($expCount && $expCount !== $actCount) {
+                throw new RuntimeException("Parsed resources count of $actCount doesn't match expected count of $expCount");
             }
         }
     }

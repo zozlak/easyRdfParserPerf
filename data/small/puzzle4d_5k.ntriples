@@ -1,3 +1,13 @@
+# A Puzzle in 4D ARCHE metadata by Austrian Academy of Sciences
+#
+# To the extent possible under law, the person who associated CC0 with
+# A Puzzle in 4D ARCHE metadata has waived all copyright and related or
+# neighboring rights to A Puzzle in 4D ARCHE metadata.
+#
+# The full CC0 legalcode can be obtained from
+# <http://creativecommons.org/publicdomain/zero/1.0/>.
+<https://technical#subject> <https://technical#resourceCount> "628" .
+<https://technical#subject> <https://technical#tripleCount> "5003" .
 <https://id.acdh.oeaw.ac.at/nationalstiftung> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://vocabs.acdh.oeaw.ac.at/schema#Organisation> .
 <https://id.acdh.oeaw.ac.at/nationalstiftung> <https://vocabs.acdh.oeaw.ac.at/schema#hasIdentifier> <https://viaf.org/viaf/563152988197212790007> .
 <https://id.acdh.oeaw.ac.at/nationalstiftung> <https://vocabs.acdh.oeaw.ac.at/schema#hasTitle> "Nationalstiftung f\u00FCr Forschung, Technologie und Entwicklung"@de .
