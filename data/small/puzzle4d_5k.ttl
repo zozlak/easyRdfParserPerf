@@ -6,6 +6,7 @@
 #
 # The full CC0 legalcode can be obtained from
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
+
 @prefix ns0: <https://vocabs.acdh.oeaw.ac.at/schema#> .
 
 <https://technical#subject> <https://technical#resourceCount> "628" .
