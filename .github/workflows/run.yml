@@ -10,77 +10,72 @@ jobs:
     - uses: shivammathur/setup-php@v2
       with:
         php-version: '7.4'
-    - name: cache R packages
-      uses: actions/cache@v2
-      with:
-        path: ~/R
-        key: R
     - name: composer update
       run: composer update
     - name: test
-      run: |
-        mkdir output
-        php -f test.php -- --data data/small --runs 10 | tee output/data.json
+      run: php -f test.php -- --data data/small --runs 10 | tee data-small.json
     - name: test old EasyRdf
-      run: php -f testOldReleases.php -- --data data/small --runs 10
+      run: php -f testOldReleases.php -- --data data/small --runs 10 | tee data-small-old.json
     - name: plots
       run: Rscript plots.R
     - name: store artifacts
       uses: actions/upload-artifact@v2
       with:
         name: small-test-results
-        path: output
-  medium:
+        path: data-*.json
+#  medium:
+#    runs-on: ubuntu-latest
+#    steps:
+#    - uses: actions/checkout@v2
+#    - uses: shivammathur/setup-php@v2
+#      with:
+#        php-version: '7.4'
+#    - name: composer update
+#      run: composer update
+#    - name: test
+#      run: php -f test.php -- --data data/medium --runs 1 | tee data-medium.json
+#    - name: test old EasyRdf
+#      run: php -f testOldReleases.php -- --data data/medium --runs 1 | tee data-medium-old.json
+#    - name: plots
+#      run: Rscript plots.R
+#    - name: store artifacts
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: medium-test-results
+#        path: data-*.json
+#  big:
+#    runs-on: ubuntu-latest
+#    steps:
+#    - uses: actions/checkout@v2
+#    - uses: shivammathur/setup-php@v2
+#      with:
+#        php-version: '7.4'
+#    - name: composer update
+#      run: composer update
+#    - name: test
+#      run: php -f test.php -- --data data/big --runs 1 | tee data-big.json
+#    - name: test old EasyRdf
+#      run: php -f testOldReleases.php -- --data data/big --runs 1 | tee data-big-old.json
+#    - name: store artifacts
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: big-test-results
+#        path: data-*.json
+  charts:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: shivammathur/setup-php@v2
-      with:
-        php-version: '7.4'
     - name: cache R packages
       uses: actions/cache@v2
       with:
         path: ~/R
         key: R
-    - name: composer update
-      run: composer update
-    - name: test
-      run: |
-        mkdir output
-        php -f test.php -- --data data/medium --runs 1 | tee output/data.json
-    - name: test old EasyRdf
-      run: php -f testOldReleases.php -- --data data/medium --runs 1
+    - uses: actions/download-artifact@master
+    - run: ls -1
     - name: plots
       run: Rscript plots.R
     - name: store artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: medium-test-results
-        path: output
-  big:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: shivammathur/setup-php@v2
-      with:
-        php-version: '7.4'
-    - name: cache R packages
-      uses: actions/cache@v2
-      with:
-        path: ~/R
-        key: R
-    - name: composer update
-      run: composer update
-    - name: test
-      run: |
-        mkdir output
-        php -f test.php -- --data data/big --runs 1 | tee output/data.json
-    - name: test old EasyRdf
-      run: php -f testOldReleases.php -- --data data/big --runs 1
-    - name: plots
-      run: Rscript plots.R
-    - name: store artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: big-test-results
-        path: output
+        name: charts
+        path: *.svg
+      
