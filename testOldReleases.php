@@ -67,8 +67,9 @@ if (preg_match(VERSION_REGEX, $argv[1] ?? '')) {
 }
 $test = new EasyRdf\ParserPerfTest\Test();
 
+echo "[\n";
+$N = 0;
 foreach ($versions as $version) {
-    echo "# $version\n";
     $cmd = "composer require easyrdf/easyrdf:$version >/dev/null 2>&1 ";
     $cmd .= "&& php -f test.php -- --class 'EasyRdf\ParserPerfTest\EasyRdf'";
     for ($i = $firstParam; $i < $argc; $i++) {
@@ -77,6 +78,8 @@ foreach ($versions as $version) {
     $data = json_decode(shell_exec($cmd));
     foreach ($data as $i) {
         $i->class .= "-$version";
+        echo ($N > 0 ? ",\n" : '') . json_encode($i, JSON_PRETTY_PRINT | JSON_INVALID_UTF8_IGNORE);
+        $N++;
     }
-    echo json_encode($data, JSON_PRETTY_PRINT | JSON_INVALID_UTF8_IGNORE) . "\n";
 }
+echo "]\n";

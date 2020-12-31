@@ -45,7 +45,7 @@ The repository includes an R code for parsing test results and generating a simp
 
 This is done by the code in `plots.R` which is also automatically run using the GitHub Actions CI/CD.
 
-Report is published as an Actions run artifact.
+Report is published as an GitHub Actions run artifact.
 
 ## Extending
 
