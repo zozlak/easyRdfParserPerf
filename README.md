@@ -2,7 +2,7 @@
 
 A set of tests for checking possible EasyRdf parser backends performance.
 
-As we want to compare aples to aples each backend implementation must return data in exactly the same format
+As we want to compare apples to apples each backend implementation must return data in exactly the same format
 and as we are considering possible EasyRdf backends, the common format is an `EasyRdf\Graph` instance.
 
 ## Running
