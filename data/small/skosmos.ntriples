@@ -1,0 +1,1685 @@
+# Configuration file from the Finto-data project
+# (https://github.com/NatLibFi/Finto-data)
+# licensed by the National Library of Finland (University of Helsinki) as CC0.
+# (https://creativecommons.org/publicdomain/zero/1.0/)
+
+<https://technical#subject> <https://technical#resourceCount> "462" .
+<https://technical#subject> <https://technical#tripleCount> "1679" .
+
+<file://data/small/skosmos.ttl#config> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Configuration> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#sparqlDialect> "JenaText" .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#sparqlCollationEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#sparqlTimeout> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#httpTimeout> "10"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#serviceName> "DevFinto" .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#languages> _:genid1 .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#searchResultsSize> "20"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#transitiveLimit> "1000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#logCaughtExceptions> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#logBrowserConsole> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#templateCache> "/tmp/dev.finto.fi-template-cache" .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#customCss> "resource/css/finto.css" .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#feedbackAddress> "finto-posti@helsinki.fi" .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#feedbackSender> "" .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#feedbackEnvelopeSender> "" .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#uiLanguageDropdown> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#uiHoneypotEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#uiHoneypotTime> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<file://data/small/skosmos.ttl#config> <http://purl.org/net/skosmos#globalPlugins> _:genid7 .
+_:genid2 <http://www.w3.org/2000/01/rdf-schema#label> "fi" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "fi_FI.utf8" .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid2 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid4 <http://www.w3.org/2000/01/rdf-schema#label> "sv" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "sv_SE.utf8" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid4 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid6 <http://www.w3.org/2000/01/rdf-schema#label> "en" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "en_GB.utf8" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "yse" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<file://data/small/skosmos.ttl#afo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#afo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/dc/terms/title> "AFO - Luonnonvara- ja ympäristöontologia"@fi .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/dc/terms/title> "AFO - Naturresurs- och miljöontologi"@sv .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/dc/terms/title> "AFO - Natural resource and environment ontology"@en .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#shortName> "AFO" .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_science> .
+<file://data/small/skosmos.ttl#afo> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/afo/" .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/afo-meta/Concept> .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/luke-meta/Concept> .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#feedbackRecipient> "jarmo.saarikko@helsinki.fi" .
+<file://data/small/skosmos.ttl#afo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/afo/afo-skos.ttl> .
+<file://data/small/skosmos.ttl#afo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/afo/afo-skos.rdf> .
+<file://data/small/skosmos.ttl#afo> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/afo/> .
+<file://data/small/skosmos.ttl#afo> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/afo/> .
+<file://data/small/skosmos.ttl#allars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#allars> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/dc/terms/title> "Allärs - Allmän tesaurus på svenska"@fi .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/dc/terms/title> "Allärs - Allmän tesaurus på svenska"@sv .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/dc/terms/title> "Allärs - General thesaurus in Swedish"@en .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#shortName> "Allärs" .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#marcSourceCode> "allars" .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#allars> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/allars/" .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#groupClass> <http://www.w3.org/2004/02/skos/core#Collection> .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#exactMatch> .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#broadMatch> .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#narrowMatch> .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#usePlugin> "ysallars" .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#feedbackRecipient> "maria.forsen@abo.fi" .
+<file://data/small/skosmos.ttl#allars> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/allars/allars-skos.ttl> .
+<file://data/small/skosmos.ttl#allars> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/allars/allars-skos.rdf> .
+<file://data/small/skosmos.ttl#allars> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#allars> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/allars/> .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/dc/terms/title> "Avoindata.fi:n ontologia: Sisältötyyppi"@fi .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/dc/terms/title> "Ontologi för Avoindata.fi: Innehållstyp"@sv .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/dc/terms/title> "Ontology of Avoindata.fi: Content type"@en .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/net/skosmos#shortName> "Avoindata-CT" .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://rdfs.org/ns/void#uriSpace> "http://avoindata.fi/onto/contentType/" .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/avoindata-ct/avoindata-ct-skos.ttl> .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/avoindata-ct/avoindata-ct-skos.rdf> .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#avoindata-ct> <http://purl.org/net/skosmos#sparqlGraph> <http://avoindata.fi/onto/contentType/> .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/dc/terms/title> "Avoindata.fi:n ontologia: Aihe"@fi .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/dc/terms/title> "Ontologi för Avoindata.fi: Tjänst"@sv .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/dc/terms/title> "Ontology of Avoindata.fi: Topic"@en .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/net/skosmos#shortName> "Avoindata-Topic" .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://rdfs.org/ns/void#uriSpace> "http://avoindata.fi/onto/topic/" .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/avoindata-topic/avoindata-topic-skos.ttl> .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/avoindata-topic/avoindata-topic-skos.rdf> .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#avoindata-topic> <http://purl.org/net/skosmos#sparqlGraph> <http://avoindata.fi/onto/topic/> .
+<file://data/small/skosmos.ttl#cer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#cer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#cer> <http://purl.org/dc/terms/title> "Tieteen termipankin CER-ontologia"@fi .
+<file://data/small/skosmos.ttl#cer> <http://purl.org/dc/terms/title> "Clean Energy Research ontology of The Bank of Finnish Terminology in Art and Sciences"@en .
+<file://data/small/skosmos.ttl#cer> <http://purl.org/net/skosmos#shortName> "CER" .
+<file://data/small/skosmos.ttl#cer> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_science> .
+<file://data/small/skosmos.ttl#cer> <http://rdfs.org/ns/void#uriSpace> "http://tieteentermipankki.fi/wiki/" .
+<file://data/small/skosmos.ttl#cer> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#cer> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#cer> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#cer> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#cer> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/cer/cer-skos.ttl> .
+<file://data/small/skosmos.ttl#cer> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#cer> <http://purl.org/net/skosmos#sparqlGraph> <http://tieteentermipankki.fi/wiki/> .
+<file://data/small/skosmos.ttl#cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#cn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/dc/terms/title> "Suomalaiset yhteisönimet"@fi .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/dc/terms/title> "Finländska samfundsnamn"@sv .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/dc/terms/title> "Finnish Corporate Names"@en .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/net/skosmos#shortName> "Yhteisöt" .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#cn> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:cn:" .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/net/skosmos#propertyOrder> <file://data/small/skosmos.ttl#rda-order> .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/net/skosmos#feedbackRecipient> "toimijakuvailu-posti@helsinki.fi" .
+<file://data/small/skosmos.ttl#cn> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/cn/cn-skos.ttl> .
+<file://data/small/skosmos.ttl#cn> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/cn/cn-skos.rdf> .
+<file://data/small/skosmos.ttl#cn> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:cn:> .
+<file://data/small/skosmos.ttl#cn> <http://purl.org/net/skosmos#useParamPlugin> <file://data/small/skosmos.ttl#cnMessage> .
+<file://data/small/skosmos.ttl#eos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#eos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#eos> <http://purl.org/dc/terms/title> "Elinikäisen oppimisen sanasto"@fi .
+<file://data/small/skosmos.ttl#eos> <http://purl.org/net/skosmos#shortName> "EOS" .
+<file://data/small/skosmos.ttl#eos> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#eos> <http://rdfs.org/ns/void#uriSpace> "http://iow.csc.fi/skos/eos#" .
+<file://data/small/skosmos.ttl#eos> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#eos> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#eos> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#eos> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#eos> <http://purl.org/net/skosmos#groupClass> <http://www.w3.org/2004/02/skos/core#Collection> .
+<file://data/small/skosmos.ttl#eos> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/eos/eos-skos.ttl> .
+<file://data/small/skosmos.ttl#eos> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/eos/eos-skos.rdf> .
+<file://data/small/skosmos.ttl#eos> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#eos> <http://purl.org/net/skosmos#sparqlGraph> <http://iow.csc.fi/skos/eos#> .
+<file://data/small/skosmos.ttl#finaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#finaf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/dc/terms/title> "KANTO - Kansalliset toimijatiedot"@fi .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/dc/terms/title> "KANTO - Nationella aktörsnamn"@sv .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/net/skosmos#shortName> "KANTO" .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/net/skosmos#usePlugin> "finaf" .
+<file://data/small/skosmos.ttl#finaf> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:finaf:" .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/net/skosmos#showStatistics> "false" .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/net/skosmos#propertyOrder> <file://data/small/skosmos.ttl#finaf-order> .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/net/skosmos#feedbackRecipient> "toimijakuvailu-posti@helsinki.fi" .
+<file://data/small/skosmos.ttl#finaf> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/finaf/finaf-skos.ttl> .
+<file://data/small/skosmos.ttl#finaf> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/finaf/finaf-skos.rdf> .
+<file://data/small/skosmos.ttl#finaf> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#finaf> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:finaf:> .
+<file://data/small/skosmos.ttl#geo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#geo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/dc/terms/title> "GEO - Geologian ontologia"@fi .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/dc/terms/title> "GEO - Geologian ontologia"@sv .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/dc/terms/title> "GEO - Geologian ontologia"@en .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/net/skosmos#shortName> "GEO" .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_geo> .
+<file://data/small/skosmos.ttl#geo> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/gtk/" .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/gtk-meta/Concept> .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#geo> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#geo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/geo/geo-skos.ttl> .
+<file://data/small/skosmos.ttl#geo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/geo/geo-skos.rdf> .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/gtk/> .
+<file://data/small/skosmos.ttl#geo> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/gtk/> .
+<file://data/small/skosmos.ttl#gfdc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#gfdc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/dc/terms/title> "GFDC - Metsäalan kymmenluokittelu"@fi .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/dc/terms/title> "GFDC - Skoglig decimalklassifikation"@sv .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/dc/terms/title> "GFDC - Global Forest Decimal Classification"@en .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#shortName> "GFDC" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_science> .
+<file://data/small/skosmos.ttl#gfdc> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:gfdc:" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#language> "fr" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#language> "de" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#language> "sl" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#defaultLanguage> "en" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#mainConceptScheme> <http://urn.fi/URN:NBN:fi:au:gfdc:> .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#indexShowClass> <http://urn.fi/URN:NBN:fi:au:gfdc:GlossaryConcept> .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#feedbackRecipient> "jarmo.saarikko@luke.fi" .
+<file://data/small/skosmos.ttl#gfdc> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/gfdc/gfdc-skos.ttl> .
+<file://data/small/skosmos.ttl#gfdc> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/gfdc/gfdc-skos.rdf> .
+<file://data/small/skosmos.ttl#gfdc> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#gfdc> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:gfdc:> .
+<file://data/small/skosmos.ttl#hero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#hero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/dc/terms/title> "HERO - Heraldiikan ontologia"@fi .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/dc/terms/title> "HERO - Heraldikens ontologi"@sv .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/dc/terms/title> "HERO - Ontology of Heraldry"@en .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#shortName> "HERO" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_culture> .
+<file://data/small/skosmos.ttl#hero> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/hero/" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#feedbackRecipient> "yrjo.kotivuori@arkisto.fi" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "de" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "fr" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "sq" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "es" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "nl" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "it" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "hr" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "lv" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "lt" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "pl" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "ro" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "sr" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "da" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "cs" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "uk" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "hu" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "be" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "ru" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "et" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "ca" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "el" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "la" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "nb" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "pt" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "sk" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "bg" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#language> "sl" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#fallbackLanguages> _:genid8 .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#usePlugin> "hero" .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#usePlugin> "wiki" .
+<file://data/small/skosmos.ttl#hero> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/hero/hero-skos.ttl> .
+<file://data/small/skosmos.ttl#hero> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/hero/hero-skos.rdf> .
+<file://data/small/skosmos.ttl#hero> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/hero/> .
+<file://data/small/skosmos.ttl#hero> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/hero/> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "en" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "fr" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "de" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "it" .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "es" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "sv" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "fi" .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<file://data/small/skosmos.ttl#hklj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#hklj> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/dc/terms/title> "HKLJ -  Helsingin kaupunginkirjaston luokitusjärjestelmä"@fi .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/dc/terms/title> "HSKS - Helsingfors stadsbiblioteks klassifikationssystem"@sv .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/dc/terms/title> "HCLCS - Helsinki City Library Classification System"@en .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#shortName> "HKLJ" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#hklj> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:hklj:" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#defaultSidebarView> "hierarchy" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#searchByNotation> "true" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#feedbackRecipient> "marjut.puominen@hel.fi" .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#alphabeticalListQualifier> <http://www.w3.org/2004/02/skos/core#notation> .
+<file://data/small/skosmos.ttl#hklj> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/hklj/hklj-skos.ttl> .
+<file://data/small/skosmos.ttl#hklj> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/hklj/hklj-skos.rdf> .
+<file://data/small/skosmos.ttl#hklj> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#hklj> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:hklj:> .
+<file://data/small/skosmos.ttl#ic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/dc/terms/title> "Iconclass"@fi .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/dc/terms/title> "Iconclass"@sv .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/dc/terms/title> "Iconclass"@en .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/net/skosmos#shortName> "Iconclass" .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_culture> .
+<file://data/small/skosmos.ttl#ic> <http://rdfs.org/ns/void#uriSpace> "http://iconclass.org/" .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/net/skosmos#language> "fr" .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/net/skosmos#language> "de" .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/net/skosmos#language> "it" .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/net/skosmos#defaultLanguage> "en" .
+<file://data/small/skosmos.ttl#ic> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ic/ic-skos.ttl> .
+<file://data/small/skosmos.ttl#ic> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ic/ic-skos.rdf> .
+<file://data/small/skosmos.ttl#ic> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ic> <http://purl.org/net/skosmos#sparqlGraph> <http://iconclass.org/> .
+<file://data/small/skosmos.ttl#jhsmeta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#jhsmeta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#jhsmeta> <http://purl.org/dc/terms/title> "JHSmeta"@fi .
+<file://data/small/skosmos.ttl#jhsmeta> <http://purl.org/net/skosmos#shortName> "JHSmeta" .
+<file://data/small/skosmos.ttl#jhsmeta> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#jhsmeta> <http://rdfs.org/ns/void#uriSpace> "http://jhsmeta.fi/skos/" .
+<file://data/small/skosmos.ttl#jhsmeta> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#jhsmeta> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#jhsmeta> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#jhsmeta> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#jhsmeta> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/jhsmeta/jhsmeta-skos.ttl> .
+<file://data/small/skosmos.ttl#jhsmeta> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/jhsmeta/jhsmeta-skos.rdf> .
+<file://data/small/skosmos.ttl#jhsmeta> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#jhsmeta> <http://purl.org/net/skosmos#sparqlGraph> <http://jhsmeta.fi/skos/> .
+<file://data/small/skosmos.ttl#iptc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#iptc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/dc/terms/title> "IPTC NewsCodes"@fi .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/dc/terms/title> "IPTC NewsCodes"@sv .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/dc/terms/title> "IPTC NewsCodes"@en .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/net/skosmos#shortName> "IPTC" .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#iptc> <http://rdfs.org/ns/void#uriSpace> "http://cv.iptc.org/newscodes/subjectcode/" .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/net/skosmos#defaultLanguage> "en" .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/net/skosmos#mainConceptScheme> <http://cv.iptc.org/newscodes/> .
+<file://data/small/skosmos.ttl#iptc> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/iptc/iptc-skos.ttl> .
+<file://data/small/skosmos.ttl#iptc> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/iptc/iptc-skos.rdf> .
+<file://data/small/skosmos.ttl#iptc> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#iptc> <http://purl.org/net/skosmos#sparqlGraph> <http://cv.iptc.org/newscodes/> .
+<file://data/small/skosmos.ttl#iptc-scene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#iptc-scene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#iptc-scene> <http://purl.org/dc/terms/title> "IPTC NewsCodes: Scene"@fi .
+<file://data/small/skosmos.ttl#iptc-scene> <http://purl.org/dc/terms/title> "IPTC NewsCodes: Scene"@sv .
+<file://data/small/skosmos.ttl#iptc-scene> <http://purl.org/dc/terms/title> "IPTC NewsCodes: Scene"@en .
+<file://data/small/skosmos.ttl#iptc-scene> <http://purl.org/net/skosmos#shortName> "IPTC-Scene" .
+<file://data/small/skosmos.ttl#iptc-scene> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#iptc-scene> <http://rdfs.org/ns/void#uriSpace> "http://cv.iptc.org/newscodes/scene/" .
+<file://data/small/skosmos.ttl#iptc-scene> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#iptc-scene> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#iptc-scene> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#iptc-scene> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/iptc-scene/iptc-scene-skos.ttl> .
+<file://data/small/skosmos.ttl#iptc-scene> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/iptc-scene/iptc-scene-skos.rdf> .
+<file://data/small/skosmos.ttl#iptc-scene> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#iptc-scene> <http://purl.org/net/skosmos#sparqlGraph> <http://cv.iptc.org/newscodes/scene/> .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/dc/terms/title> "IPTC NewsCodes: Subject Code"@fi .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/dc/terms/title> "IPTC NewsCodes: Subject Code"@sv .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/dc/terms/title> "IPTC NewsCodes: Subject Code"@en .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/net/skosmos#shortName> "IPTC-Subject" .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://rdfs.org/ns/void#uriSpace> "http://cv.iptc.org/newscodes/subjectcode/" .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/net/skosmos#defaultLanguage> "en" .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/iptc-subjectcode/iptc-subjectcode-skos.ttl> .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/iptc-subjectcode/iptc-subjectcode-skos.rdf> .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#iptc-subjectcode> <http://purl.org/net/skosmos#sparqlGraph> <http://cv.iptc.org/newscodes/subjectcode/> .
+<file://data/small/skosmos.ttl#juho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#juho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/dc/terms/title> "JUHO - Julkishallinnon ontologia"@fi .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/dc/terms/title> "JUHO - Julkishallinnon ontologia"@sv .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/dc/terms/title> "JUHO - Julkishallinnon ontologia"@en .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#shortName> "JUHO" .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#marcSourceCode> "juho" .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#juho> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/juho/" .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/juho-meta/Concept> .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#feedbackRecipient> "pekka.kuittinen@vnk.fi" .
+<file://data/small/skosmos.ttl#juho> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/juho/juho-skos.ttl> .
+<file://data/small/skosmos.ttl#juho> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/juho/juho-skos.rdf> .
+<file://data/small/skosmos.ttl#juho> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/juho/> .
+<file://data/small/skosmos.ttl#juho> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/juho/> .
+<file://data/small/skosmos.ttl#jupo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#jupo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/dc/terms/title> "JUPO - Julkisen hallinnon palveluontologia"@fi .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/dc/terms/title> "JUPO - Ontologi för den offentliga sektorns tjänster"@sv .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/dc/terms/title> "JUPO - Finnish Ontology for Public Administration Services"@en .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#shortName> "JUPO" .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#marcSourceCode> "jupo" .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#jupo> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/jupo/" .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/jupo-meta/Concept> .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#feedbackRecipient> "marko.latvanen@vrk.fi" .
+<file://data/small/skosmos.ttl#jupo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/jupo/jupo-skos.ttl> .
+<file://data/small/skosmos.ttl#jupo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/jupo/jupo-skos.rdf> .
+<file://data/small/skosmos.ttl#jupo> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/jupo/> .
+<file://data/small/skosmos.ttl#jupo> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/jupo/> .
+<file://data/small/skosmos.ttl#kassu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#kassu> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/dc/terms/title> "Kassu - Kasvien suomenkieliset nimet"@fi .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/dc/terms/title> "Kassu - Finska växtnamn"@sv .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/dc/terms/title> "Kassu - Finnish Names of Plants"@en .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/net/skosmos#shortName> "Kassu" .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/net/skosmos#marcSourceCode> "kassu" .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_science> .
+<file://data/small/skosmos.ttl#kassu> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/kassu/" .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/net/skosmos#feedbackRecipient> "leo.junikka@helsinki.fi" .
+<file://data/small/skosmos.ttl#kassu> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kassu/kassu-skos.ttl> .
+<file://data/small/skosmos.ttl#kassu> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kassu/kassu-skos.rdf> .
+<file://data/small/skosmos.ttl#kassu> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#kassu> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/kassu/> .
+<file://data/small/skosmos.ttl#kauno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#kauno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/dc/terms/title> "KAUNO - fiktiivisen aineiston ontologia"@fi .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/dc/terms/title> "KAUNO - ontologi för fiktivt material"@sv .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/dc/terms/title> "KAUNO - ontology for fiction"@en .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#shortName> "KAUNO" .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#marcSourceCode> "kauno" .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_lang> .
+<file://data/small/skosmos.ttl#kauno> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/kauno/" .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/kauno-meta/Concept> .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#groupClass> <http://www.yso.fi/onto/kauno-meta/ConceptGroup> .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#feedbackRecipient> "yrjo.lindegren@hel.fi" .
+<file://data/small/skosmos.ttl#kauno> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kauno/kauno-skos.ttl> .
+<file://data/small/skosmos.ttl#kauno> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kauno/kauno-skos.rdf> .
+<file://data/small/skosmos.ttl#kauno> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/kauno/> .
+<file://data/small/skosmos.ttl#kauno> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/kauno/> .
+<file://data/small/skosmos.ttl#kaunokki> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#kaunokki> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/dc/terms/title> "KAUNOKKI/BELLA - fiktiivisen aineiston sanasto"@fi .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/dc/terms/title> "KAUNOKKI/BELLA - tesaurus för fiktivt material"@sv .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/dc/terms/title> "KAUNOKKI/BELLA - thesaurus for fiction"@en .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#shortName> "KAUNOKKI/BELLA" .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#marcSourceCode> "kaunokki"@fi .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#marcSourceCode> "bella"@sv .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_lang> .
+<file://data/small/skosmos.ttl#kaunokki> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:kaunokki:" .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/kaunokki-meta/Concept> .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#groupClass> <http://www.yso.fi/onto/kaunokki-meta/ConceptGroup> .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#feedbackRecipient> "marjut.puominen@hel.fi" .
+<file://data/small/skosmos.ttl#kaunokki> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kaunokki/kaunokki-skos.ttl> .
+<file://data/small/skosmos.ttl#kaunokki> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kaunokki/kaunokki-skos.rdf> .
+<file://data/small/skosmos.ttl#kaunokki> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:kaunokki:> .
+<file://data/small/skosmos.ttl#kaunokki> <http://purl.org/net/skosmos#mainConceptScheme> <http://urn.fi/URN:NBN:fi:au:kaunokki:> .
+<file://data/small/skosmos.ttl#keko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#keko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/dc/terms/title> "KEKO - Kestävän kehityksen kasvatuksen ontologia"@fi .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/dc/terms/title> "KEKO - Ontologi för fostran i hållbar utveckling"@sv .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/dc/terms/title> "KEKO - Ontology for Education for Sustainable Development"@en .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#shortName> "KEKO" .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#keko> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/keko/" .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/keko-meta/Concept> .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#feedbackRecipient> "katja.viberg@kierratyskeskus.fi" .
+<file://data/small/skosmos.ttl#keko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/keko/keko-skos.ttl> .
+<file://data/small/skosmos.ttl#keko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/keko/keko-skos.rdf> .
+<file://data/small/skosmos.ttl#keko> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/keko/> .
+<file://data/small/skosmos.ttl#keko> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/keko/> .
+<file://data/small/skosmos.ttl#kito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#kito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/dc/terms/title> "KITO - Kirjallisuudentutkimuksen ontologia"@fi .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/dc/terms/title> "KITO - Kirjallisuudentutkimuksen ontologia"@sv .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/dc/terms/title> "KITO - Kirjallisuudentutkimuksen ontologia"@en .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#shortName> "KITO" .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#marcSourceCode> "kito" .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_lang> .
+<file://data/small/skosmos.ttl#kito> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/kito/" .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/kito-meta/Concept> .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#kito> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kito/kito-skos.ttl> .
+<file://data/small/skosmos.ttl#kito> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kito/kito-skos.rdf> .
+<file://data/small/skosmos.ttl#kito> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/kito/> .
+<file://data/small/skosmos.ttl#kito> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/kito/> .
+<file://data/small/skosmos.ttl#koko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#koko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/dc/terms/title> "KOKO-ontologia"@fi .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/dc/terms/title> "KOKO-ontologin"@sv .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/dc/terms/title> "KOKO Ontology"@en .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#shortName> "KOKO" .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#marcSourceCode> "koko" .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#koko> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/koko/" .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#koko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/koko/koko-skos.ttl> .
+<file://data/small/skosmos.ttl#koko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/koko/koko-skos.rdf> .
+<file://data/small/skosmos.ttl#koko> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/koko/> .
+<file://data/small/skosmos.ttl#koko> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/koko/> .
+<file://data/small/skosmos.ttl#kokotesti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#kokotesti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/dc/terms/title> "KOKO-testi"@fi .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/dc/terms/title> "KOKO-test"@sv .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/dc/terms/title> "KOKO test"@en .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#shortName> "KOKOtest" .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#kokotesti> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/koko/" .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#kokotesti> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/koko/koko-skos_test.ttl> .
+<file://data/small/skosmos.ttl#kokotesti> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/kokotest/> .
+<file://data/small/skosmos.ttl#kokotesti> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/koko/> .
+<file://data/small/skosmos.ttl#kto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#kto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/dc/terms/title> "KTO - Kielitieteen ontologia"@fi .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/dc/terms/title> "KTO - Kielitieteen ontologia"@sv .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/dc/terms/title> "KTO - Kielitieteen ontologia"@en .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#shortName> "KTO" .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#marcSourceCode> "kto" .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_lang> .
+<file://data/small/skosmos.ttl#kto> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/kto/" .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/kto-meta/Concept> .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#kto> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kto/kto-skos.ttl> .
+<file://data/small/skosmos.ttl#kto> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kto/kto-skos.rdf> .
+<file://data/small/skosmos.ttl#kto> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#feedbackRecipient> "anna-liisa.kristiansson@kotus.fi" .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/kto/> .
+<file://data/small/skosmos.ttl#kto> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/kto/> .
+<file://data/small/skosmos.ttl#kulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#kulo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/dc/terms/title> "KULO - Kulttuurien tutkimuksen ontologia"@fi .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/dc/terms/title> "KULO - Kulttuurien tutkimuksen ontologia"@sv .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/dc/terms/title> "KULO - Kulttuurien tutkimuksen ontologia"@en .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#shortName> "KULO" .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#marcSourceCode> "kulo" .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_culture> .
+<file://data/small/skosmos.ttl#kulo> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/kulo/" .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/kulo-meta/Concept> .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#kulo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kulo/kulo-skos.ttl> .
+<file://data/small/skosmos.ttl#kulo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/kulo/kulo-skos.rdf> .
+<file://data/small/skosmos.ttl#kulo> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/kulo/> .
+<file://data/small/skosmos.ttl#kulo> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/kulo/> .
+<file://data/small/skosmos.ttl#lajisto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#lajisto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/dc/terms/title> "LAJISTO - Lajitietokeskuksen lajiluettelo"@fi .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/dc/terms/title> "LAJISTO - Artdatacentrets artlista"@sv .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/dc/terms/title> "LAJISTO - Species list of FinBIF"@en .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/net/skosmos#shortName> "LAJISTO" .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_science> .
+<file://data/small/skosmos.ttl#lajisto> <http://rdfs.org/ns/void#uriSpace> "http://tun.fi/" .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#lajisto> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/lajisto/lajisto-skos.ttl> .
+<file://data/small/skosmos.ttl#lajisto> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/lajisto/lajisto-skos.rdf> .
+<file://data/small/skosmos.ttl#lajisto> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#lajisto> <http://purl.org/net/skosmos#sparqlGraph> <http://tun.fi/> .
+<file://data/small/skosmos.ttl#oiko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#oiko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/dc/terms/title> "OIKO - Oikeushallinnon ontologia"@fi .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#oiko> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/oiko/" .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#shortName> "OIKO" .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/oiko-meta/Concept> .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#indexShowClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#hasMultiLingualProperty> <http://www.yso.fi/onto/oiko-meta/deprecatedLabel> .
+<file://data/small/skosmos.ttl#oiko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/oiko/oiko-skos.ttl> .
+<file://data/small/skosmos.ttl#oiko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/oiko/oiko-skos.rdf> .
+<file://data/small/skosmos.ttl#oiko> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/oiko/> .
+<file://data/small/skosmos.ttl#oiko> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/oiko/> .
+<file://data/small/skosmos.ttl#lapponica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#lapponica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/dc/terms/title> "Lapponica"@fi .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/dc/terms/title> "Lapponica"@sv .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/dc/terms/title> "Lapponica"@en .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/net/skosmos#shortName> "Lapponica" .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/net/skosmos#marcSourceCode> "lapponica" .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#lapponica> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:lapponica:" .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/net/skosmos#language> "se" .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#lapponica> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/lapponica/lapponica-skos.ttl> .
+<file://data/small/skosmos.ttl#lapponica> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/lapponica/lapponica-skos.rdf> .
+<file://data/small/skosmos.ttl#lapponica> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#lapponica> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:lapponica:> .
+<file://data/small/skosmos.ttl#liito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#liito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/dc/terms/title> "LIITO - Liiketoimintaontologia"@fi .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/dc/terms/title> "LIITO - Liiketoimintaontologia"@sv .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/dc/terms/title> "LIITO - Liiketoimintaontologia"@en .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#shortName> "LIITO" .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#marcSourceCode> "liito" .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#liito> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/liito/" .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/liito-meta/Concept> .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#feedbackRecipient> "eeva.koivisto@ely-keskus.fi" .
+<file://data/small/skosmos.ttl#liito> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/liito/liito-skos.ttl> .
+<file://data/small/skosmos.ttl#liito> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/liito/liito-skos.rdf> .
+<file://data/small/skosmos.ttl#liito> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/liito/> .
+<file://data/small/skosmos.ttl#liito> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/liito/> .
+<file://data/small/skosmos.ttl#lexvo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#lexvo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/dc/terms/title> "Lexvo - ISO 639-3 kielikoodit"@fi .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/dc/terms/title> "Lexvo - ISO 639-3 språkkoder"@sv .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/dc/terms/title> "Lexvo - ISO 639-3 language codes"@en .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/net/skosmos#shortName> "Lexvo" .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_lang> .
+<file://data/small/skosmos.ttl#lexvo> <http://rdfs.org/ns/void#uriSpace> "http://lexvo.org/id/iso639-3/" .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/net/skosmos#defaultLanguage> "en" .
+<file://data/small/skosmos.ttl#lexvo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/lexvo/lexvo-skos.ttl> .
+<file://data/small/skosmos.ttl#lexvo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/lexvo/lexvo-skos.rdf> .
+<file://data/small/skosmos.ttl#lexvo> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#lexvo> <http://purl.org/net/skosmos#sparqlGraph> <http://lexvo.org/id/iso639-3/> .
+<file://data/small/skosmos.ttl#maotao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#maotao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/dc/terms/title> "MAO/TAO - Museoalan ja taideteollisuusalan ontologia"@fi .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/dc/terms/title> "MAO/TAO - Ontologi för museibranschen och Konstindustriella ontologin"@sv .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/dc/terms/title> "MAO/TAO - Ontology for Museum Domain and Applied Arts"@en .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#shortName> "MAO/TAO" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#marcSourceCode> "maotao" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_culture> .
+<file://data/small/skosmos.ttl#maotao> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/tao/" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#feedbackRecipient> "hannele.dahl@museovirasto.fi" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/mao-meta/Concept> .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/tao-meta/Concept> .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#maotao> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/maotao/maotao-skos.ttl> .
+<file://data/small/skosmos.ttl#maotao> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/maotao/maotao-skos.rdf> .
+<file://data/small/skosmos.ttl#maotao> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/tao/> .
+<file://data/small/skosmos.ttl#maotao> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/tao/> .
+<file://data/small/skosmos.ttl#mero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#mero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/dc/terms/title> "MERO - Merenkulkualan ontologia"@fi .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/dc/terms/title> "MERO - Merenkulkualan ontologia"@sv .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/dc/terms/title> "MERO - Merenkulkualan ontologia"@en .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#shortName> "MERO" .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#mero> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/mero/" .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/mero-meta/Concept> .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#mero> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/mero/mero-skos.ttl> .
+<file://data/small/skosmos.ttl#mero> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/mero/mero-skos.rdf> .
+<file://data/small/skosmos.ttl#mero> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/mero/> .
+<file://data/small/skosmos.ttl#mero> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/mero/> .
+<file://data/small/skosmos.ttl#liiko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#liiko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/dc/terms/title> "LIIKO - Liikenteen ontologia"@fi .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/dc/terms/title> "LIIKO - Liikenteen ontologia"@sv .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/dc/terms/title> "LIIKO - Liikenteen ontologia"@en .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#shortName> "LIIKO" .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#liiko> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/mero/" .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/mero-meta/Concept> .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#liiko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/liiko/mero-skos.ttl> .
+<file://data/small/skosmos.ttl#liiko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/liiko/mero-skos.rdf> .
+<file://data/small/skosmos.ttl#liiko> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/liiko/> .
+<file://data/small/skosmos.ttl#liiko> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/mero/> .
+<file://data/small/skosmos.ttl#mesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#mesh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/dc/terms/title> "MeSH / FinMeSH"@fi .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/dc/terms/title> "Medical Subject Headings"@en .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/dc/terms/title> "MeSH / SweMeSH"@sv .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/net/skosmos#shortName> "MeSH" .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_science> .
+<file://data/small/skosmos.ttl#mesh> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/mesh/" .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/net/skosmos#feedbackRecipient> "rosa.venalainen@helsinki.fi" .
+<file://data/small/skosmos.ttl#mesh> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/mesh/mesh-skos.ttl> .
+<file://data/small/skosmos.ttl#mesh> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/mesh/mesh-skos.rdf> .
+<file://data/small/skosmos.ttl#mesh> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#mesh> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/mesh/> .
+<file://data/small/skosmos.ttl#mts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#mts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/dc/terms/title> "Metatietosanasto"@fi .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/dc/terms/title> "Metatietosanasto"@en .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/dc/terms/title> "Metatietosanasto"@sv .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#shortName> "Metatietosanasto" .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#marcSourceCode> "mts" .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#mts> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:mts:" .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#defaultSidebarView> "groups" .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#groupClass> <http://www.w3.org/2004/02/skos/core#Collection> .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#feedbackRecipient> "kiti-vilkki.eriksson@helsinki.fi" .
+<file://data/small/skosmos.ttl#mts> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/metatietosanasto/metatietosanasto-skos.ttl> .
+<file://data/small/skosmos.ttl#mts> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/metatietosanasto/metatietosanasto-skos.rdf> .
+<file://data/small/skosmos.ttl#mts> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#mts> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:mts:> .
+<file://data/small/skosmos.ttl#slm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#slm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/dc/terms/title> "Suomalainen lajityyppi- ja muotosanasto"@fi .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/dc/terms/title> "Finländsk genre- och formlista"@sv .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#shortName> "SLM" .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#marcSourceCode> "slm" .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#slm> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:slm:" .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#feedbackRecipient> "mirja.anttila@helsinki.fi" .
+<file://data/small/skosmos.ttl#slm> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/slm/slm-skos.ttl> .
+<file://data/small/skosmos.ttl#slm> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/slm/slm-skos.rdf> .
+<file://data/small/skosmos.ttl#slm> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/slm/slm-fin.mrcx> .
+<file://data/small/skosmos.ttl#slm> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/slm/slm-swe.mrcx> .
+<file://data/small/skosmos.ttl#slm> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#mainConceptScheme> <http://urn.fi/URN:NBN:fi:au:slm:> .
+<file://data/small/skosmos.ttl#slm> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:slm:> .
+<http://dev.finto.fi/download/slm/slm-fin.mrcx> <http://purl.org/dc/terms/format> "application/marcxml+xml" .
+<http://dev.finto.fi/download/slm/slm-fin.mrcx> <http://purl.org/dc/terms/language> "fi" .
+<http://dev.finto.fi/download/slm/slm-swe.mrcx> <http://purl.org/dc/terms/format> "application/marcxml+xml" .
+<http://dev.finto.fi/download/slm/slm-swe.mrcx> <http://purl.org/dc/terms/language> "sv" .
+<file://data/small/skosmos.ttl#slmtest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#slmtest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/dc/terms/title> "Suomalainen lajityyppi- ja muotosanasto - käsiteskeemat piilotettu (testi)"@fi .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/dc/terms/title> "Finländsk genre- och formlista (experiment)"@sv .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#shortName> "SLM (test)" .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#slmtest> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:slm:" .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#feedbackRecipient> "mirja.anttila@helsinki.fi" .
+<file://data/small/skosmos.ttl#slmtest> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#mainConceptScheme> <http://urn.fi/URN:NBN:fi:au:slm:> .
+<file://data/small/skosmos.ttl#slmtest> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/slmtest/> .
+<file://data/small/skosmos.ttl#musa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#musa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/dc/terms/title> "MUSA - Musiikin asiasanasto"@fi .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/dc/terms/title> "CILLA - Specialtesaurus för musik"@sv .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/dc/terms/title> "MUSA/CILLA - Finnish Music Thesaurus"@en .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#shortName> "MUSA" .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#marcSourceCode> "musa/fin"@fi .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#marcSourceCode> "cilla/swe"@sv .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_culture> .
+<file://data/small/skosmos.ttl#musa> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/musa/" .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#usePlugin> "musa" .
+<file://data/small/skosmos.ttl#musa> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/musa/musa-skos.ttl> .
+<file://data/small/skosmos.ttl#musa> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/musa/musa-skos.rdf> .
+<file://data/small/skosmos.ttl#musa> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/musa/> .
+<file://data/small/skosmos.ttl#musa> <http://purl.org/net/skosmos#useParamPlugin> <file://data/small/skosmos.ttl#musaMessage> .
+<file://data/small/skosmos.ttl#muso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#muso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/dc/terms/title> "MUSO - Musiikin ontologia"@fi .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/dc/terms/title> "MUSO - Ontologi för musik"@sv .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/dc/terms/title> "MUSO - Ontology for Music"@en .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#shortName> "MUSO" .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#marcSourceCode> "muso" .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_culture> .
+<file://data/small/skosmos.ttl#muso> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/muso/" .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/muso-meta/Concept> .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#feedbackRecipient> "katerina.sornova@helsinki.fi" .
+<file://data/small/skosmos.ttl#muso> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/muso/muso-skos.ttl> .
+<file://data/small/skosmos.ttl#muso> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/muso/muso-skos.rdf> .
+<file://data/small/skosmos.ttl#muso> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/muso/> .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/muso/> .
+<file://data/small/skosmos.ttl#muso> <http://purl.org/net/skosmos#useParamPlugin> <file://data/small/skosmos.ttl#musoMessage> .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/dc/terms/title> "Korkeakoulujen tutkimustiedonkeruussa käytettävä tieteenalaluokitus"@fi .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/dc/terms/title> "Korkeakoulujen tutkimustiedonkeruussa käytettävä tieteenalaluokitus"@sv .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/dc/terms/title> "Korkeakoulujen tutkimustiedonkeruussa käytettävä tieteenalaluokitus"@en .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/net/skosmos#shortName> "OKM-tieteenala" .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/okm-tieteenala/" .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/okm-tieteenala/okm-tieteenala-skos.ttl> .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/okm-tieteenala/okm-tieteenala-skos.rdf> .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#okm-tieteenala> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/okm-tieteenala/> .
+<file://data/small/skosmos.ttl#paikat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#paikat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/dc/terms/title> "Paikannimirekisteri"@fi .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/net/skosmos#shortName> "Paikat" .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_geo> .
+<file://data/small/skosmos.ttl#paikat> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/paikat/" .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/net/skosmos#language> "sme" .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/net/skosmos#language> "smn" .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/net/skosmos#language> "sms" .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#paikat> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/paikat/paikka-skos.ttl> .
+<file://data/small/skosmos.ttl#paikat> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/paikat/paikka-skos.rdf> .
+<file://data/small/skosmos.ttl#paikat> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#paikat> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/paikat/> .
+<file://data/small/skosmos.ttl#yso-paikat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#yso-paikat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/dc/terms/title> "YSO-paikat"@fi .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/dc/terms/title> "ALLFO-orter"@sv .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/dc/terms/title> "YSO places"@en .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_geo> .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#marcSourceCode> "yso/fin"@fi .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#marcSourceCode> "yso/swe"@sv .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#marcSourceCode> "yso/eng"@en .
+<file://data/small/skosmos.ttl#yso-paikat> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/yso/" .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#usePlugin> "wiki" .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#usePlugin> "suggestions" .
+<file://data/small/skosmos.ttl#yso-paikat> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso-paikat/yso-paikat-skos.ttl> .
+<file://data/small/skosmos.ttl#yso-paikat> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso-paikat/yso-paikat-skos.rdf> .
+<file://data/small/skosmos.ttl#yso-paikat> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/yso-paikat-fin.mrcx> .
+<file://data/small/skosmos.ttl#yso-paikat> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/yso-paikat-swe.mrcx> .
+<file://data/small/skosmos.ttl#yso-paikat> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#yso-paikat> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/yso-paikat/> .
+<http://dev.finto.fi/download/yso-paikat/yso-paikat-fin.mrcx> <http://purl.org/dc/terms/format> "application/marcxml+xml" .
+<http://dev.finto.fi/download/yso-paikat/yso-paikat-fin.mrcx> <http://purl.org/dc/terms/language> "fi" .
+<http://dev.finto.fi/download/yso-paikat/yso-paikat-swe.mrcx> <http://purl.org/dc/terms/format> "application/marcxml+xml" .
+<http://dev.finto.fi/download/yso-paikat/yso-paikat-swe.mrcx> <http://purl.org/dc/terms/language> "sv" .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://purl.org/dc/terms/title> "Pondus-kategoriat"@fi .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://purl.org/dc/terms/title> "Ponduskategorier"@sv .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://purl.org/dc/terms/title> "Pondus categories"@en .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://purl.org/net/skosmos#shortName> "Pondus" .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/ponduskategorier/" .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ponduskategorier/ponduskategorier-skos.ttl> .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ponduskategorier/ponduskategorier-skos.rdf> .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ponduskategorier> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/ponduskategorier/> .
+<file://data/small/skosmos.ttl#pto-testi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#pto-testi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/dc/terms/title> "PTO - Finnish Geospatial Domain Ontology Test Version"@en .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/dc/terms/title> "PTO - Paikkatieto-ontologian testiversio"@fi .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/dc/terms/title> "PTO - Ontologi för geografisk information, testversion"@sv .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#shortName> "PTO-test" .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_geo> .
+<file://data/small/skosmos.ttl#pto-testi> <http://rdfs.org/ns/void#uriSpace> "http://paikkatiedot.fi/def/1001001/" .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#feedbackRecipient> "Inspire@maanmittauslaitos.fi" .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#indexShowClass> <http://paikkatiedot.fi/def/1001000/PaikhakConcept> .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#indexShowClass> <http://paikkatiedot.fi/def/1001000/TskConcept> .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#indexShowClass> <http://paikkatiedot.fi/def/1001000/InspireConcept> .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#hasMultiLingualProperty> <http://paikkatiedot.fi/def/1001000/deprecatedLabel> .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#mainConceptScheme> <http://paikkatiedot.fi/def/1001000/> .
+<file://data/small/skosmos.ttl#pto-testi> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/pto/pto-skos-test.ttl> .
+<file://data/small/skosmos.ttl#pto-testi> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#pto-testi> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/pto-test/> .
+<file://data/small/skosmos.ttl#pto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#pto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/dc/terms/title> "PTO - Finnish Geospatial Domain Ontology"@en .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/dc/terms/title> "PTO - Paikkatieto-ontologia"@fi .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/dc/terms/title> "PTO - Ontologi för geografisk information"@sv .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#shortName> "PTO" .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_geo> .
+<file://data/small/skosmos.ttl#pto> <http://rdfs.org/ns/void#uriSpace> "http://paikkatiedot.fi/def/1001001/" .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#feedbackRecipient> "Inspire@maanmittauslaitos.fi" .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#indexShowClass> <http://paikkatiedot.fi/def/1001000/PaikhakConcept> .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#indexShowClass> <http://paikkatiedot.fi/def/1001000/TskConcept> .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#indexShowClass> <http://paikkatiedot.fi/def/1001000/InspireConcept> .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#hasMultiLingualProperty> <http://paikkatiedot.fi/def/1001000/deprecatedLabel> .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#mainConceptScheme> <http://paikkatiedot.fi/def/1001000/> .
+<file://data/small/skosmos.ttl#pto> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/pto/pto-skos.ttl> .
+<file://data/small/skosmos.ttl#pto> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/pto/pto-skos.rdf> .
+<file://data/small/skosmos.ttl#pto> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#pto> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/pto/> .
+<file://data/small/skosmos.ttl#ptvl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ptvl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/dc/terms/title> "Julkisten palvelujen luokitus"@fi .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/dc/terms/title> "Julkisten palvelujen luokitus"@sv .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/dc/terms/title> "Julkisten palvelujen luokitus"@en .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#shortName> "PTVL" .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#ptvl> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:ptvl:" .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#showTopConcepts> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#sortByNotation> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#feedbackRecipient> "marko.latvanen@vrk.fi" .
+<file://data/small/skosmos.ttl#ptvl> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ptvl/ptvl-skos.ttl> .
+<file://data/small/skosmos.ttl#ptvl> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:ptvl:> .
+<file://data/small/skosmos.ttl#ptvl> <http://purl.org/net/skosmos#mainConceptScheme> <http://urn.fi/URN:NBN:fi:au:ptvl:> .
+<file://data/small/skosmos.ttl#puho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#puho> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/dc/terms/title> "PUHO - Puolustushallinnon ontologia"@fi .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/dc/terms/title> "PUHO - Puolustushallinnon ontologia"@sv .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/dc/terms/title> "PUHO - Puolustushallinnon ontologia"@en .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#shortName> "PUHO" .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#marcSourceCode> "puho" .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#puho> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/puho/" .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/puho-meta/Concept> .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#feedbackRecipient> "esa.i.hamalainen@mil.fi" .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#usePlugin> "puho" .
+<file://data/small/skosmos.ttl#puho> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/puho/puho-skos.ttl> .
+<file://data/small/skosmos.ttl#puho> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/puho/puho-skos.rdf> .
+<file://data/small/skosmos.ttl#puho> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/puho/> .
+<file://data/small/skosmos.ttl#puho> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/puho/> .
+<file://data/small/skosmos.ttl#soto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#soto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/dc/terms/title> "SOTO - Sotatieteen ontologia"@fi .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/dc/terms/title> "SOTO - Sotatieteen ontologia"@sv .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/dc/terms/title> "SOTO - Sotatieteen ontologia"@en .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#shortName> "SOTO" .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#soto> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/soto/" .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/soto-meta/Concept> .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#feedbackRecipient> "esa.i.hamalainen@mil.fi" .
+<file://data/small/skosmos.ttl#soto> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/soto/soto-skos.ttl> .
+<file://data/small/skosmos.ttl#soto> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/soto/soto-skos.rdf> .
+<file://data/small/skosmos.ttl#soto> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/soto/> .
+<file://data/small/skosmos.ttl#soto> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/soto/> .
+<file://data/small/skosmos.ttl#sapo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#sapo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#sapo> <http://purl.org/dc/terms/title> "SAPO - Suomen ajallinen paikkaontologia"@fi .
+<file://data/small/skosmos.ttl#sapo> <http://purl.org/net/skosmos#shortName> "SAPO" .
+<file://data/small/skosmos.ttl#sapo> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_geo> .
+<file://data/small/skosmos.ttl#sapo> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/sapo/" .
+<file://data/small/skosmos.ttl#sapo> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#sapo> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#sapo> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#sapo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/sapo/sapo-skos.ttl> .
+<file://data/small/skosmos.ttl#sapo> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#sapo> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/sapo/> .
+<file://data/small/skosmos.ttl#seko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#seko> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#seko> <http://purl.org/dc/terms/title> "SEKO - Suomalainen esityskokoonpanosanasto"@fi .
+<file://data/small/skosmos.ttl#seko> <http://purl.org/net/skosmos#shortName> "SEKO" .
+<file://data/small/skosmos.ttl#seko> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_culture> .
+<file://data/small/skosmos.ttl#seko> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/urn:nbn:fi:au:seko:" .
+<file://data/small/skosmos.ttl#seko> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#seko> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#seko> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#seko> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#seko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/seko/seko-skos.ttl> .
+<file://data/small/skosmos.ttl#seko> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/seko/seko-skos.rdf> .
+<file://data/small/skosmos.ttl#seko> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#seko> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/urn:nbn:fi:au:seko:> .
+<file://data/small/skosmos.ttl#tero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#tero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/dc/terms/title> "TERO - Terveyden ja hyvinvoinnin ontologia"@fi .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/dc/terms/title> "TERO - Ontologi för hälsa och välfärd"@sv .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/dc/terms/title> "TERO - Finnish Ontology of Health and Welfare"@en .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#shortName> "TERO" .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#marcSourceCode> "tero" .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_science> .
+<file://data/small/skosmos.ttl#tero> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/tero/" .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/tero-meta/Concept> .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#feedbackRecipient> "johanna.eerola@thl.fi" .
+<file://data/small/skosmos.ttl#tero> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/tero/tero-skos.ttl> .
+<file://data/small/skosmos.ttl#tero> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/tero/tero-skos.rdf> .
+<file://data/small/skosmos.ttl#tero> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/tero/> .
+<file://data/small/skosmos.ttl#tero> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/tero/> .
+<file://data/small/skosmos.ttl#tsr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#tsr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/dc/terms/title> "TSR-ontologia"@fi .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/dc/terms/title> "TSR-ontologi"@sv .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/dc/terms/title> "TSR ontology"@en .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#shortName> "TSR" .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#marcSourceCode> "tsr" .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#tsr> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/tsr/" .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#feedbackRecipient> "viestinta@tsr.fi" .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/tsr-meta/Concept> .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#tsr> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/tsr/tsr-skos.ttl> .
+<file://data/small/skosmos.ttl#tsr> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/tsr/tsr-skos.rdf> .
+<file://data/small/skosmos.ttl#tsr> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/tsr/> .
+<file://data/small/skosmos.ttl#tsr> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/tsr/> .
+<file://data/small/skosmos.ttl#ucum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ucum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/dc/terms/title> "UCUM - The Unified Code for Units of Measure"@en .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/net/skosmos#shortName> "UCUM" .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ucum> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:ucum:" .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/net/skosmos#groupClass> <http://www.w3.org/2004/02/skos/core#Collection> .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/net/skosmos#defaultLanguage> "en" .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#ucum> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ucum/ucum-skos.ttl> .
+<file://data/small/skosmos.ttl#ucum> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:ucum:> .
+<file://data/small/skosmos.ttl#ucum> <http://purl.org/net/skosmos#mainConceptScheme> <http://urn.fi/URN:NBN:fi:au:ucum:> .
+<file://data/small/skosmos.ttl#udcs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#udcs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/dc/terms/title> "Supistettu UDK"@fi .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/dc/terms/title> "UDC Summary"@sv .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/dc/terms/title> "UDC Summary"@en .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#shortName> "UDC Summary" .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#udcs> <http://rdfs.org/ns/void#uriSpace> "http://udcdata.info/" .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#defaultLanguage> "en" .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#sortByNotation> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#searchByNotation> "true" .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#mainConceptScheme> <http://udcdata.info/udc-schema> .
+<file://data/small/skosmos.ttl#udcs> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/udcs/udcs-skos.ttl> .
+<file://data/small/skosmos.ttl#udcs> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/udcs/udcs-skos.rdf> .
+<file://data/small/skosmos.ttl#udcs> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#udcs> <http://purl.org/net/skosmos#sparqlGraph> <http://udcdata.info/> .
+<file://data/small/skosmos.ttl#valo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#valo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/dc/terms/title> "VALO - Valokuvausalan ontologia"@fi .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/dc/terms/title> "VALO - Fotografiska ontologin"@sv .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/dc/terms/title> "VALO - The Finnish Ontology of Photography"@en .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#shortName> "VALO" .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#marcSourceCode> "valo" .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_culture> .
+<file://data/small/skosmos.ttl#valo> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/valo/" .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#indexShowClass> <http://www.yso.fi/onto/valo-meta/Concept> .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#feedbackRecipient> "elina.heikka@fmp.fi" .
+<file://data/small/skosmos.ttl#valo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/valo/valo-skos.ttl> .
+<file://data/small/skosmos.ttl#valo> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/valo/valo-skos.rdf> .
+<file://data/small/skosmos.ttl#valo> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/valo/> .
+<file://data/small/skosmos.ttl#valo> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/valo/> .
+<file://data/small/skosmos.ttl#ykl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ykl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/dc/terms/title> "YKL - Yleisten kirjastojen luokitusjärjestelmä"@fi .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/dc/terms/title> "KAB - Allmänna bibliotekens klassifikationssystem"@sv .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/dc/terms/title> "PLC - Finnish Public Libraries Classification System"@en .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#shortName> "YKL" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ykl> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:ykl:" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#defaultSidebarView> "hierarchy" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#sortByNotation> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#searchByNotation> "true" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#feedbackRecipient> "marjut.puominen@hel.fi" .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#alphabeticalListQualifier> <http://www.w3.org/2004/02/skos/core#notation> .
+<file://data/small/skosmos.ttl#ykl> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ykl/ykl-skos.ttl> .
+<file://data/small/skosmos.ttl#ykl> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ykl/ykl-skos.rdf> .
+<file://data/small/skosmos.ttl#ykl> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ykl> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:ykl:> .
+<file://data/small/skosmos.ttl#ysa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ysa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/dc/terms/title> "YSA - Yleinen suomalainen asiasanasto"@fi .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/dc/terms/title> "YSA - Yleinen suomalainen asiasanasto"@sv .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/dc/terms/title> "YSA - General Finnish thesaurus"@en .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#shortName> "YSA" .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#marcSourceCode> "ysa" .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ysa> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/ysa/" .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#groupClass> <http://www.w3.org/2004/02/skos/core#Collection> .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#exactMatch> .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#broadMatch> .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#narrowMatch> .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#feedbackRecipient> "vesa-posti@helsinki.fi" .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#usePlugin> "ysallars" .
+<file://data/small/skosmos.ttl#ysa> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ysa/ysa-skos.ttl> .
+<file://data/small/skosmos.ttl#ysa> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ysa/ysa-skos.rdf> .
+<file://data/small/skosmos.ttl#ysa> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ysa> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/ysa/> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/dc/terms/title> "YSA + paikkarikastukset"@fi .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/dc/terms/title> "YSA + platser"@sv .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/dc/terms/title> "YSA + places"@en .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#shortName> "YSApaikat" .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#marcSourceCode> "ysa" .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/ysa/" .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#groupClass> <http://www.w3.org/2004/02/skos/core#Collection> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#exactMatch> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#broadMatch> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#narrowMatch> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#feedbackRecipient> "vesa-posti@helsinki.fi" .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#ysapaikat> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/ysa/ysa-paikat-skos.ttl> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ysapaikat> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/ysa-paikat/> .
+<file://data/small/skosmos.ttl#yse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#yse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/dc/terms/title> "YSAn ja YSOn käsite-ehdotukset"@fi .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/dc/terms/title> "YSAn ja YSOn käsite-ehdotukset"@sv .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/dc/terms/title> "YSAn ja YSOn käsite-ehdotukset"@en .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/net/skosmos#shortName> "YSE" .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#yse> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/ysa/" .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/net/skosmos#feedbackRecipient> "vesa-posti@helsinki.fi" .
+<file://data/small/skosmos.ttl#yse> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yse/yse-skos.ttl> .
+<file://data/small/skosmos.ttl#yse> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#yse> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/yse/> .
+<file://data/small/skosmos.ttl#yso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#yso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/dc/terms/title> "YSO - Yleinen suomalainen ontologia"@fi .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/dc/terms/title> "ALLFO - Allmän finländsk ontologi"@sv .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/dc/terms/title> "YSO - General Finnish ontology"@en .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#shortName> "YSO"@fi .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#shortName> "ALLFO"@sv .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#shortName> "YSO"@en .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#marcSourceCode> "yso/fin"@fi .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#marcSourceCode> "yso/swe"@sv .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#marcSourceCode> "yso/eng"@en .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#yso> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/yso/" .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#note> .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#usePlugin> "suggestions" .
+<file://data/small/skosmos.ttl#yso> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/yso-skos.ttl> .
+<file://data/small/skosmos.ttl#yso> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/yso-skos.rdf> .
+<file://data/small/skosmos.ttl#yso> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/yso-fin.mrcx> .
+<file://data/small/skosmos.ttl#yso> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/yso-swe.mrcx> .
+<file://data/small/skosmos.ttl#yso> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/yso/> .
+<file://data/small/skosmos.ttl#yso> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/yso/> .
+<http://dev.finto.fi/download/yso/yso-fin.mrcx> <http://purl.org/dc/terms/format> "application/marcxml+xml" .
+<http://dev.finto.fi/download/yso/yso-fin.mrcx> <http://purl.org/dc/terms/language> "fi" .
+<http://dev.finto.fi/download/yso/yso-swe.mrcx> <http://purl.org/dc/terms/format> "application/marcxml+xml" .
+<http://dev.finto.fi/download/yso/yso-swe.mrcx> <http://purl.org/dc/terms/language> "sv" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/dc/terms/title> "YSO - Yleinen suomalainen ontologia, Aristoteles-versio"@fi .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/dc/terms/title> "ALLFO - Allmän finländsk ontologi, Aristoteles version"@sv .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/dc/terms/title> "YSO - General Finnish ontology, Aristotle version"@en .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#shortName> "YSO-A"@fi .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#shortName> "ALLFO-A"@sv .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#shortName> "YSO-A"@en .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/yso/" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#feedbackRecipient> "kk-info@helsinki.fi" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#note> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/releases/2017.1.Aristoteles/yso-skos.ttl> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/releases/2017.1.Aristoteles/yso-skos.rdf> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/yso-aristoteles/> .
+<file://data/small/skosmos.ttl#ysoaristoteles> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/yso/> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/dc/terms/title> "YSO - Yleinen suomalainen ontologia, Boethius-versio"@fi .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/dc/terms/title> "ALLFO - Allmän finländsk ontologi, Boethius version"@sv .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/dc/terms/title> "YSO - General Finnish ontology, Boethius version"@en .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#shortName> "YSO-B"@fi .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#shortName> "ALLFO-B"@sv .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#shortName> "YSO-B"@en .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/yso/" .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#note> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#ysoboethius> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/releases/2018.3.Boethius/yso-skos.ttl> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/releases/2018.3.Boethius/yso-skos.rdf> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/yso-boethius/> .
+<file://data/small/skosmos.ttl#ysoboethius> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/yso/> .
+<file://data/small/skosmos.ttl#ysocicero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ysocicero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/dc/terms/title> "YSO - Yleinen suomalainen ontologia, Cicero-versio"@fi .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/dc/terms/title> "ALLFO - Allmän finländsk ontologi, Cicero version"@sv .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/dc/terms/title> "YSO - General Finnish ontology, Cicero version"@en .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#shortName> "YSO-C"@fi .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#shortName> "ALLFO-C"@sv .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#shortName> "YSO-C"@en .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ysocicero> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/yso/" .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#note> .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#ysocicero> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/releases/2019.3.Cicero/yso-skos.ttl> .
+<file://data/small/skosmos.ttl#ysocicero> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/releases/2019.3.Cicero/yso-skos.rdf> .
+<file://data/small/skosmos.ttl#ysocicero> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/yso-cicero/> .
+<file://data/small/skosmos.ttl#ysocicero> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/yso/> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/dc/terms/title> "YSO - Yleinen suomalainen ontologia, Diotima-versio"@fi .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/dc/terms/title> "ALLFO - Allmän finländsk ontologi, Diotima version"@sv .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/dc/terms/title> "YSO - General Finnish ontology, Diotima version"@en .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#shortName> "YSO-D"@fi .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#shortName> "ALLFO-D"@sv .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#shortName> "YSO-D"@en .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/yso/" .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#note> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#ysodiotima> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/releases/2020.1.Diotima/yso-skos.ttl> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/yso/releases/2020.1.Diotima/ysoKehitys.rdf> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/yso-diotima/> .
+<file://data/small/skosmos.ttl#ysodiotima> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/yso/> .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/dc/terms/title> "YSO - Yleinen suomalainen ontologia, tietomalliuudistus (testi)"@fi .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/dc/terms/title> "ALLFO - Allmän finländsk ontologi, uppdatering av datamodellen (experiment)"@sv .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/dc/terms/title> "YSO - General Finnish ontology, data model update (test)"@en .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_general> .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://rdfs.org/ns/void#uriSpace> "http://www.yso.fi/onto/yso/" .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#showTopConcepts> "true" .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#groupClass> <http://purl.org/iso25964/skos-thes#ConceptGroup> .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#arrayClass> <http://purl.org/iso25964/skos-thes#ThesaurusArray> .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#showChangeList> "true" .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#showPropertyInSearch> <http://www.w3.org/2004/02/skos/core#note> .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#usePlugin> "finna" .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#sparqlGraph> <http://www.yso.fi/onto/yso-tietomalliuudistus/> .
+<file://data/small/skosmos.ttl#ysotietomalliuudistus> <http://purl.org/net/skosmos#mainConceptScheme> <http://www.yso.fi/onto/yso/> .
+<file://data/small/skosmos.ttl#tt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#Vocabulary> .
+<file://data/small/skosmos.ttl#tt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rdfs.org/ns/void#Dataset> .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/dc/terms/title> "Tietotermit"@fi .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/dc/terms/title> "Tietotermit"@en .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/dc/terms/title> "Tietotermit"@sv .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#shortName> "TT" .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/dc/terms/subject> <file://data/small/skosmos.ttl#cat_society> .
+<file://data/small/skosmos.ttl#tt> <http://rdfs.org/ns/void#uriSpace> "http://urn.fi/URN:NBN:fi:au:tt:" .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#language> "fi" .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#language> "sv" .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#language> "en" .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#useModifiedDate> "true" .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#defaultLanguage> "fi" .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#usePlugin> "tieto" .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#feedbackRecipient> "sanastot@lingsoft.fi" .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#fullAlphabeticalIndex> "true" .
+<file://data/small/skosmos.ttl#tt> <http://rdfs.org/ns/void#dataDump> <http://dev.finto.fi/download/tt/tieto-skos.ttl> .
+<file://data/small/skosmos.ttl#tt> <http://rdfs.org/ns/void#sparqlEndpoint> <http://api.dev.finto.fi/sparql> .
+<file://data/small/skosmos.ttl#tt> <http://purl.org/net/skosmos#sparqlGraph> <http://urn.fi/URN:NBN:fi:au:tt:> .
+<file://data/small/skosmos.ttl#musaMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#ParameterizedPlugin> .
+<file://data/small/skosmos.ttl#musaMessage> <http://purl.org/net/skosmos#usePlugin> "message" .
+<file://data/small/skosmos.ttl#musaMessage> <http://purl.org/net/skosmos#parameters> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .
+_:genid15 <http://schema.org/propertyID> "msg" .
+_:genid15 <http://schema.org/value> "Tämä on päivitettyä tietoa sisältävä testiviesti. <a href='http://dev.finto.fi/yso/fi/'>Linkki YSO:oon</a>."@fi .
+_:genid15 <http://schema.org/value> "Det här är ett testmeddelande."@sv .
+_:genid15 <http://schema.org/value> "This is a test message." .
+<file://data/small/skosmos.ttl#musoMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#ParameterizedPlugin> .
+<file://data/small/skosmos.ttl#musoMessage> <http://purl.org/net/skosmos#usePlugin> "message" .
+<file://data/small/skosmos.ttl#musoMessage> <http://purl.org/net/skosmos#parameters> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .
+_:genid16 <http://schema.org/propertyID> "msg" .
+_:genid16 <http://schema.org/value> "Musiikin ontologia MUSO on yhdistetty Yleiseen suomalaiseen ontologiaan YSOon. MUSOa ei enää ylläpidetä eikä sen termejä päivitetä. Musiikkikirjallisuuden kuvailussa käytetään YSOn  käsitteitä. Uusia musiikkialan termejä voi ehdottaa YSOon ehdotusjärjestelmässä."@fi .
+_:genid16 <http://schema.org/value> "MUSO - ontologi för musik har uppgått i den allmänna finländska ontologin ALLFO. MUSO upprätthålls inte längre och termerna i den uppdateras inte. Vid beskrivning av musiklitteratur används ALLFO-begrepp. Nya termer gällande musik föreslås till ALLFO via förslagssystemet."@sv .
+_:genid16 <http://schema.org/value> "Vocabulary is no longer in use." .
+<file://data/small/skosmos.ttl#cnMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#ParameterizedPlugin> .
+<file://data/small/skosmos.ttl#cnMessage> <http://purl.org/net/skosmos#usePlugin> "message" .
+<file://data/small/skosmos.ttl#cnMessage> <http://purl.org/net/skosmos#parameters> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PropertyValue> .
+_:genid17 <http://schema.org/propertyID> "msg" .
+_:genid17 <http://schema.org/value> "<b>Suomalaisten yhteisönimien</b> päivittäminen loppui joulukuussa 2020. Uudet yhteisönimet päivittyvät KANTOon (<a href='http://finto.fi/finaf/fi/'>http://finto.fi/finaf/fi/</a>). KANTO - Kansalliset toimijatiedot on palvelu, jossa yhteisöjen ja henkilöiden tiedot ovat julkaistuja avoimena datana. Toimijoihin liittyvät aineistot ovat linkitettynä ja näkyvät erillisenä listauksena.\n<br/><br/>\nJos on kysyttävää, ota yhteyttä meihin: toimijakuvailu-posti @ helsinki.fi.  "@fi .
+_:genid17 <http://schema.org/value> "Uppdateringen av <b>Finländska samfundsnamn</b> (Suomalaiset yhteisönimet) upphörde i december 2020. Nya namn på samfund och övriga organisationer införs i KANTO (<a href='https://finto.fi/finaf/sv/'>Kansalliset toimijanimet - namnformer för finländska agenter</a>). KANTO är en tjänst, som erbjuder uppgifter om namnformer på personer och organisationer som öppen data. De publikationer som associeras med agenterna (dvs. personer eller organisationer) är länkade och syns i en egen tabell.\n</br></br>\nFör eventuella frågor kontakta oss: toimijakuvailu-posti @ helsinki.fi."@sv .
+_:genid17 <http://schema.org/value> "Maintenance of <b>The Names of Finnish Corporate Bodies</b> (Suomalaiset yhteisönimet) ended in December 2020. You can find the names of the Finnish corporate bodies in KANTO (<a href='https://finto.fi/finaf/en/'>http://finto.fi/finaf/en/</a>), where you can see the names of persons associated with Finnish publications as well.\n<br/><br/>\nFor further information, please contact us: toimijakuvailu-posti @ helsinki.fi." .
+<file://data/small/skosmos.ttl#rda-order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#PropertyOrder> .
+<file://data/small/skosmos.ttl#rda-order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50237> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50238> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50022> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50033> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50041> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50025> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50008> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50010> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50218> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50012> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50016> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50023> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50031> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50037> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50038> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50035> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/dc/terms/source> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<file://data/small/skosmos.ttl#finaf-order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/net/skosmos#PropertyOrder> .
+<file://data/small/skosmos.ttl#finaf-order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50094> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50006> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50121> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50037> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50120> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50038> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50098> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50236> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50237> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50238> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50103> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50025> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50119> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50118> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50109> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50097> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50346> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50350> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50115> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50104> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50110> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50108> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50033> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50100> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50022> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50102> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50023> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50428> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50429> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50008> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50010> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50012> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50016> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50095> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50318> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50316> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50336> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50334> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50113> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50035> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50395> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/a/P50393> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://rdaregistry.info/Elements/u/P61101> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<file://data/small/skosmos.ttl#categories> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<file://data/small/skosmos.ttl#categories> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sanastot ja ontologiat"@fi .
+<file://data/small/skosmos.ttl#categories> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tillgängliga tesaurusar och ontologier"@sv .
+<file://data/small/skosmos.ttl#categories> <http://www.w3.org/2004/02/skos/core#prefLabel> "Available vocabularies and ontologies"@en .
+<file://data/small/skosmos.ttl#cat_general> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<file://data/small/skosmos.ttl#cat_general> <http://www.w3.org/2004/02/skos/core#topConceptOf> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_general> <http://www.w3.org/2004/02/skos/core#inScheme> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_general> <http://www.w3.org/2004/02/skos/core#prefLabel> "Yleiset"@fi .
+<file://data/small/skosmos.ttl#cat_general> <http://www.w3.org/2004/02/skos/core#prefLabel> "Allmän"@sv .
+<file://data/small/skosmos.ttl#cat_general> <http://www.w3.org/2004/02/skos/core#prefLabel> "General"@en .
+<file://data/small/skosmos.ttl#cat_society> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<file://data/small/skosmos.ttl#cat_society> <http://www.w3.org/2004/02/skos/core#topConceptOf> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_society> <http://www.w3.org/2004/02/skos/core#inScheme> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_society> <http://www.w3.org/2004/02/skos/core#prefLabel> "Yhteiskunta"@fi .
+<file://data/small/skosmos.ttl#cat_society> <http://www.w3.org/2004/02/skos/core#prefLabel> "Samhälle"@sv .
+<file://data/small/skosmos.ttl#cat_society> <http://www.w3.org/2004/02/skos/core#prefLabel> "Society"@en .
+<file://data/small/skosmos.ttl#cat_geo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<file://data/small/skosmos.ttl#cat_geo> <http://www.w3.org/2004/02/skos/core#topConceptOf> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_geo> <http://www.w3.org/2004/02/skos/core#inScheme> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_geo> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maantiede ja paikkatieto"@fi .
+<file://data/small/skosmos.ttl#cat_geo> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geografi och geografisk information"@sv .
+<file://data/small/skosmos.ttl#cat_geo> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geography and geoinformation"@en .
+<file://data/small/skosmos.ttl#cat_science> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<file://data/small/skosmos.ttl#cat_science> <http://www.w3.org/2004/02/skos/core#topConceptOf> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_science> <http://www.w3.org/2004/02/skos/core#inScheme> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_science> <http://www.w3.org/2004/02/skos/core#prefLabel> "Luonnontieteet ja lääketiede"@fi .
+<file://data/small/skosmos.ttl#cat_science> <http://www.w3.org/2004/02/skos/core#prefLabel> "Naturvetenskap och medicin"@sv .
+<file://data/small/skosmos.ttl#cat_science> <http://www.w3.org/2004/02/skos/core#prefLabel> "Science and medicine"@en .
+<file://data/small/skosmos.ttl#cat_culture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<file://data/small/skosmos.ttl#cat_culture> <http://www.w3.org/2004/02/skos/core#topConceptOf> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_culture> <http://www.w3.org/2004/02/skos/core#inScheme> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_culture> <http://www.w3.org/2004/02/skos/core#prefLabel> "Taide ja kulttuuri"@fi .
+<file://data/small/skosmos.ttl#cat_culture> <http://www.w3.org/2004/02/skos/core#prefLabel> "Konst och kultur"@sv .
+<file://data/small/skosmos.ttl#cat_culture> <http://www.w3.org/2004/02/skos/core#prefLabel> "Art and culture"@en .
+<file://data/small/skosmos.ttl#cat_lang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<file://data/small/skosmos.ttl#cat_lang> <http://www.w3.org/2004/02/skos/core#topConceptOf> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_lang> <http://www.w3.org/2004/02/skos/core#inScheme> <file://data/small/skosmos.ttl#categories> .
+<file://data/small/skosmos.ttl#cat_lang> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kielet ja kirjallisuus"@fi .
+<file://data/small/skosmos.ttl#cat_lang> <http://www.w3.org/2004/02/skos/core#prefLabel> "Språk och litteratur"@sv .
+<file://data/small/skosmos.ttl#cat_lang> <http://www.w3.org/2004/02/skos/core#prefLabel> "Languages and literature"@en .

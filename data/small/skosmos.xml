@@ -1,0 +1,2210 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:ns0="http://purl.org/net/skosmos#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:void="http://rdfs.org/ns/void#"
+         xmlns:schema="http://schema.org/"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+<!--
+Configuration file from the Finto-data project
+(https://github.com/NatLibFi/Finto-data)
+licensed by the National Library of Finland (University of Helsinki) as CC0.
+(https://creativecommons.org/publicdomain/zero/1.0/)
+-->
+
+  <rdf:Description rdf:about="https://technical#subject">
+    <ns0:resourceCount>462</ns0:resourceCount>
+    <ns0:tripleCount>1679</ns0:tripleCount>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="file://data/small/skosmos.ttl#config">
+    <rdf:type rdf:resource="http://purl.org/net/skosmos#Configuration"/>
+    <ns0:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlDialect>JenaText</ns0:sparqlDialect>
+    <ns0:sparqlCollationEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:sparqlCollationEnabled>
+    <ns0:sparqlTimeout rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns0:sparqlTimeout>
+    <ns0:httpTimeout rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</ns0:httpTimeout>
+    <ns0:serviceName>DevFinto</ns0:serviceName>
+    <ns0:languages>
+      <rdf:Description>
+        <rdf:first>
+          <rdf:Description>
+            <rdfs:label>fi</rdfs:label>
+            <rdf:value>fi_FI.utf8</rdf:value>
+          </rdf:Description>
+        </rdf:first>
+
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first>
+              <rdf:Description>
+                <rdfs:label>sv</rdfs:label>
+                <rdf:value>sv_SE.utf8</rdf:value>
+              </rdf:Description>
+            </rdf:first>
+
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>
+                  <rdf:Description>
+                    <rdfs:label>en</rdfs:label>
+                    <rdf:value>en_GB.utf8</rdf:value>
+                  </rdf:Description>
+                </rdf:first>
+
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </ns0:languages>
+
+    <ns0:searchResultsSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ns0:searchResultsSize>
+    <ns0:transitiveLimit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</ns0:transitiveLimit>
+    <ns0:logCaughtExceptions rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:logCaughtExceptions>
+    <ns0:logBrowserConsole rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:logBrowserConsole>
+    <ns0:templateCache>/tmp/dev.finto.fi-template-cache</ns0:templateCache>
+    <ns0:customCss>resource/css/finto.css</ns0:customCss>
+    <ns0:feedbackAddress>finto-posti@helsinki.fi</ns0:feedbackAddress>
+    <ns0:feedbackSender></ns0:feedbackSender>
+    <ns0:feedbackEnvelopeSender></ns0:feedbackEnvelopeSender>
+    <ns0:uiLanguageDropdown rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</ns0:uiLanguageDropdown>
+    <ns0:uiHoneypotEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:uiHoneypotEnabled>
+    <ns0:uiHoneypotTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</ns0:uiHoneypotTime>
+    <ns0:globalPlugins>
+      <rdf:Description>
+        <rdf:first>yse</rdf:first>
+        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+      </rdf:Description>
+    </ns0:globalPlugins>
+
+  </rdf:Description>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#afo">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">AFO - Luonnonvara- ja ympäristöontologia</dc:title>
+    <dc:title xml:lang="sv">AFO - Naturresurs- och miljöontologi</dc:title>
+    <dc:title xml:lang="en">AFO - Natural resource and environment ontology</dc:title>
+    <ns0:shortName>AFO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_science"/>
+    <void:uriSpace>http://www.yso.fi/onto/afo/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/afo-meta/Concept"/>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/luke-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:feedbackRecipient>jarmo.saarikko@helsinki.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/afo/afo-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/afo/afo-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/afo/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/afo/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#allars">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Allärs - Allmän tesaurus på svenska</dc:title>
+    <dc:title xml:lang="sv">Allärs - Allmän tesaurus på svenska</dc:title>
+    <dc:title xml:lang="en">Allärs - General thesaurus in Swedish</dc:title>
+    <ns0:shortName>Allärs</ns0:shortName>
+    <ns0:marcSourceCode>allars</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/allars/</void:uriSpace>
+    <ns0:language>sv</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:groupClass rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <ns0:usePlugin>ysallars</ns0:usePlugin>
+    <ns0:feedbackRecipient>maria.forsen@abo.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/allars/allars-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/allars/allars-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/allars/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#avoindata-ct">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Avoindata.fi:n ontologia: Sisältötyyppi</dc:title>
+    <dc:title xml:lang="sv">Ontologi för Avoindata.fi: Innehållstyp</dc:title>
+    <dc:title xml:lang="en">Ontology of Avoindata.fi: Content type</dc:title>
+    <ns0:shortName>Avoindata-CT</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://avoindata.fi/onto/contentType/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/avoindata-ct/avoindata-ct-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/avoindata-ct/avoindata-ct-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://avoindata.fi/onto/contentType/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#avoindata-topic">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Avoindata.fi:n ontologia: Aihe</dc:title>
+    <dc:title xml:lang="sv">Ontologi för Avoindata.fi: Tjänst</dc:title>
+    <dc:title xml:lang="en">Ontology of Avoindata.fi: Topic</dc:title>
+    <ns0:shortName>Avoindata-Topic</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://avoindata.fi/onto/topic/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/avoindata-topic/avoindata-topic-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/avoindata-topic/avoindata-topic-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://avoindata.fi/onto/topic/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#cer">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Tieteen termipankin CER-ontologia</dc:title>
+    <dc:title xml:lang="en">Clean Energy Research ontology of The Bank of Finnish Terminology in Art and Sciences</dc:title>
+    <ns0:shortName>CER</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_science"/>
+    <void:uriSpace>http://tieteentermipankki.fi/wiki/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/cer/cer-skos.ttl"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://tieteentermipankki.fi/wiki/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#cn">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Suomalaiset yhteisönimet</dc:title>
+    <dc:title xml:lang="sv">Finländska samfundsnamn</dc:title>
+    <dc:title xml:lang="en">Finnish Corporate Names</dc:title>
+    <ns0:shortName>Yhteisöt</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:cn:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:propertyOrder>
+      <ns0:PropertyOrder rdf:about="file://data/small/skosmos.ttl#rda-order">
+        <rdf:value>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50237"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50238"/>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50022"/>
+                        <rdf:rest>
+                          <rdf:Description>
+                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50033"/>
+                            <rdf:rest>
+                              <rdf:Description>
+                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50041"/>
+                                <rdf:rest>
+                                  <rdf:Description>
+                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50025"/>
+                                    <rdf:rest>
+                                      <rdf:Description>
+                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50008"/>
+                                        <rdf:rest>
+                                          <rdf:Description>
+                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50010"/>
+                                            <rdf:rest>
+                                              <rdf:Description>
+                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50218"/>
+                                                <rdf:rest>
+                                                  <rdf:Description>
+                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50012"/>
+                                                    <rdf:rest>
+                                                      <rdf:Description>
+                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50016"/>
+                                                        <rdf:rest>
+                                                          <rdf:Description>
+                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50023"/>
+                                                            <rdf:rest>
+                                                              <rdf:Description>
+                                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50031"/>
+                                                                <rdf:rest>
+                                                                  <rdf:Description>
+                                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50037"/>
+                                                                    <rdf:rest>
+                                                                      <rdf:Description>
+                                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50038"/>
+                                                                        <rdf:rest>
+                                                                          <rdf:Description>
+                                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50035"/>
+                                                                            <rdf:rest>
+                                                                              <rdf:Description>
+                                                                                <rdf:first rdf:resource="http://purl.org/dc/terms/source"/>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                              </rdf:Description>
+                                                                            </rdf:rest>
+
+                                                                          </rdf:Description>
+                                                                        </rdf:rest>
+
+                                                                      </rdf:Description>
+                                                                    </rdf:rest>
+
+                                                                  </rdf:Description>
+                                                                </rdf:rest>
+
+                                                              </rdf:Description>
+                                                            </rdf:rest>
+
+                                                          </rdf:Description>
+                                                        </rdf:rest>
+
+                                                      </rdf:Description>
+                                                    </rdf:rest>
+
+                                                  </rdf:Description>
+                                                </rdf:rest>
+
+                                              </rdf:Description>
+                                            </rdf:rest>
+
+                                          </rdf:Description>
+                                        </rdf:rest>
+
+                                      </rdf:Description>
+                                    </rdf:rest>
+
+                                  </rdf:Description>
+                                </rdf:rest>
+
+                              </rdf:Description>
+                            </rdf:rest>
+
+                          </rdf:Description>
+                        </rdf:rest>
+
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:value>
+
+      </ns0:PropertyOrder>
+    </ns0:propertyOrder>
+
+    <ns0:feedbackRecipient>toimijakuvailu-posti@helsinki.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/cn/cn-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/cn/cn-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:cn:"/>
+    <ns0:useParamPlugin>
+      <ns0:ParameterizedPlugin rdf:about="file://data/small/skosmos.ttl#cnMessage">
+        <ns0:usePlugin>message</ns0:usePlugin>
+        <ns0:parameters>
+          <schema:PropertyValue>
+            <schema:propertyID>msg</schema:propertyID>
+            <schema:value xml:lang="fi">&lt;b&gt;Suomalaisten yhteisönimien&lt;/b&gt; päivittäminen loppui joulukuussa 2020. Uudet yhteisönimet päivittyvät KANTOon (&lt;a href='http://finto.fi/finaf/fi/'&gt;http://finto.fi/finaf/fi/&lt;/a&gt;). KANTO - Kansalliset toimijatiedot on palvelu, jossa yhteisöjen ja henkilöiden tiedot ovat julkaistuja avoimena datana. Toimijoihin liittyvät aineistot ovat linkitettynä ja näkyvät erillisenä listauksena.
+&lt;br/&gt;&lt;br/&gt;
+Jos on kysyttävää, ota yhteyttä meihin: toimijakuvailu-posti @ helsinki.fi.  </schema:value>
+            <schema:value xml:lang="sv">Uppdateringen av &lt;b&gt;Finländska samfundsnamn&lt;/b&gt; (Suomalaiset yhteisönimet) upphörde i december 2020. Nya namn på samfund och övriga organisationer införs i KANTO (&lt;a href='https://finto.fi/finaf/sv/'&gt;Kansalliset toimijanimet - namnformer för finländska agenter&lt;/a&gt;). KANTO är en tjänst, som erbjuder uppgifter om namnformer på personer och organisationer som öppen data. De publikationer som associeras med agenterna (dvs. personer eller organisationer) är länkade och syns i en egen tabell.
+&lt;/br&gt;&lt;/br&gt;
+För eventuella frågor kontakta oss: toimijakuvailu-posti @ helsinki.fi.</schema:value>
+            <schema:value>Maintenance of &lt;b&gt;The Names of Finnish Corporate Bodies&lt;/b&gt; (Suomalaiset yhteisönimet) ended in December 2020. You can find the names of the Finnish corporate bodies in KANTO (&lt;a href='https://finto.fi/finaf/en/'&gt;http://finto.fi/finaf/en/&lt;/a&gt;), where you can see the names of persons associated with Finnish publications as well.
+&lt;br/&gt;&lt;br/&gt;
+For further information, please contact us: toimijakuvailu-posti @ helsinki.fi.</schema:value>
+          </schema:PropertyValue>
+        </ns0:parameters>
+
+      </ns0:ParameterizedPlugin>
+    </ns0:useParamPlugin>
+
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#eos">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Elinikäisen oppimisen sanasto</dc:title>
+    <ns0:shortName>EOS</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://iow.csc.fi/skos/eos#</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <ns0:groupClass rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/eos/eos-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/eos/eos-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://iow.csc.fi/skos/eos#"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#finaf">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">KANTO - Kansalliset toimijatiedot</dc:title>
+    <dc:title xml:lang="sv">KANTO - Nationella aktörsnamn</dc:title>
+    <ns0:shortName>KANTO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <ns0:usePlugin>finaf</ns0:usePlugin>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:finaf:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:showStatistics>false</ns0:showStatistics>
+    <ns0:propertyOrder>
+      <ns0:PropertyOrder rdf:about="file://data/small/skosmos.ttl#finaf-order">
+        <rdf:value>
+          <rdf:Description>
+            <rdf:first rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50094"/>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50006"/>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50121"/>
+                        <rdf:rest>
+                          <rdf:Description>
+                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50037"/>
+                            <rdf:rest>
+                              <rdf:Description>
+                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50120"/>
+                                <rdf:rest>
+                                  <rdf:Description>
+                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50038"/>
+                                    <rdf:rest>
+                                      <rdf:Description>
+                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50098"/>
+                                        <rdf:rest>
+                                          <rdf:Description>
+                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50236"/>
+                                            <rdf:rest>
+                                              <rdf:Description>
+                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50237"/>
+                                                <rdf:rest>
+                                                  <rdf:Description>
+                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50238"/>
+                                                    <rdf:rest>
+                                                      <rdf:Description>
+                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50103"/>
+                                                        <rdf:rest>
+                                                          <rdf:Description>
+                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50025"/>
+                                                            <rdf:rest>
+                                                              <rdf:Description>
+                                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50119"/>
+                                                                <rdf:rest>
+                                                                  <rdf:Description>
+                                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50118"/>
+                                                                    <rdf:rest>
+                                                                      <rdf:Description>
+                                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50109"/>
+                                                                        <rdf:rest>
+                                                                          <rdf:Description>
+                                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50097"/>
+                                                                            <rdf:rest>
+                                                                              <rdf:Description>
+                                                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50346"/>
+                                                                                <rdf:rest>
+                                                                                  <rdf:Description>
+                                                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50350"/>
+                                                                                    <rdf:rest>
+                                                                                      <rdf:Description>
+                                                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50115"/>
+                                                                                        <rdf:rest>
+                                                                                          <rdf:Description>
+                                                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50104"/>
+                                                                                            <rdf:rest>
+                                                                                              <rdf:Description>
+                                                                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50110"/>
+                                                                                                <rdf:rest>
+                                                                                                  <rdf:Description>
+                                                                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50108"/>
+                                                                                                    <rdf:rest>
+                                                                                                      <rdf:Description>
+                                                                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50033"/>
+                                                                                                        <rdf:rest>
+                                                                                                          <rdf:Description>
+                                                                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50100"/>
+                                                                                                            <rdf:rest>
+                                                                                                              <rdf:Description>
+                                                                                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50022"/>
+                                                                                                                <rdf:rest>
+                                                                                                                  <rdf:Description>
+                                                                                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50102"/>
+                                                                                                                    <rdf:rest>
+                                                                                                                      <rdf:Description>
+                                                                                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50023"/>
+                                                                                                                        <rdf:rest>
+                                                                                                                          <rdf:Description>
+                                                                                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50428"/>
+                                                                                                                            <rdf:rest>
+                                                                                                                              <rdf:Description>
+                                                                                                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50429"/>
+                                                                                                                                <rdf:rest>
+                                                                                                                                  <rdf:Description>
+                                                                                                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50008"/>
+                                                                                                                                    <rdf:rest>
+                                                                                                                                      <rdf:Description>
+                                                                                                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50010"/>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                          <rdf:Description>
+                                                                                                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50012"/>
+                                                                                                                                            <rdf:rest>
+                                                                                                                                              <rdf:Description>
+                                                                                                                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50016"/>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                  <rdf:Description>
+                                                                                                                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50095"/>
+                                                                                                                                                    <rdf:rest>
+                                                                                                                                                      <rdf:Description>
+                                                                                                                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50318"/>
+                                                                                                                                                        <rdf:rest>
+                                                                                                                                                          <rdf:Description>
+                                                                                                                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50316"/>
+                                                                                                                                                            <rdf:rest>
+                                                                                                                                                              <rdf:Description>
+                                                                                                                                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50336"/>
+                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                  <rdf:Description>
+                                                                                                                                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50334"/>
+                                                                                                                                                                    <rdf:rest>
+                                                                                                                                                                      <rdf:Description>
+                                                                                                                                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50113"/>
+                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                          <rdf:Description>
+                                                                                                                                                                            <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50035"/>
+                                                                                                                                                                            <rdf:rest>
+                                                                                                                                                                              <rdf:Description>
+                                                                                                                                                                                <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50395"/>
+                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                  <rdf:Description>
+                                                                                                                                                                                    <rdf:first rdf:resource="http://rdaregistry.info/Elements/a/P50393"/>
+                                                                                                                                                                                    <rdf:rest>
+                                                                                                                                                                                      <rdf:Description>
+                                                                                                                                                                                        <rdf:first rdf:resource="http://rdaregistry.info/Elements/u/P61101"/>
+                                                                                                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                                                      </rdf:Description>
+                                                                                                                                                                                    </rdf:rest>
+
+                                                                                                                                                                                  </rdf:Description>
+                                                                                                                                                                                </rdf:rest>
+
+                                                                                                                                                                              </rdf:Description>
+                                                                                                                                                                            </rdf:rest>
+
+                                                                                                                                                                          </rdf:Description>
+                                                                                                                                                                        </rdf:rest>
+
+                                                                                                                                                                      </rdf:Description>
+                                                                                                                                                                    </rdf:rest>
+
+                                                                                                                                                                  </rdf:Description>
+                                                                                                                                                                </rdf:rest>
+
+                                                                                                                                                              </rdf:Description>
+                                                                                                                                                            </rdf:rest>
+
+                                                                                                                                                          </rdf:Description>
+                                                                                                                                                        </rdf:rest>
+
+                                                                                                                                                      </rdf:Description>
+                                                                                                                                                    </rdf:rest>
+
+                                                                                                                                                  </rdf:Description>
+                                                                                                                                                </rdf:rest>
+
+                                                                                                                                              </rdf:Description>
+                                                                                                                                            </rdf:rest>
+
+                                                                                                                                          </rdf:Description>
+                                                                                                                                        </rdf:rest>
+
+                                                                                                                                      </rdf:Description>
+                                                                                                                                    </rdf:rest>
+
+                                                                                                                                  </rdf:Description>
+                                                                                                                                </rdf:rest>
+
+                                                                                                                              </rdf:Description>
+                                                                                                                            </rdf:rest>
+
+                                                                                                                          </rdf:Description>
+                                                                                                                        </rdf:rest>
+
+                                                                                                                      </rdf:Description>
+                                                                                                                    </rdf:rest>
+
+                                                                                                                  </rdf:Description>
+                                                                                                                </rdf:rest>
+
+                                                                                                              </rdf:Description>
+                                                                                                            </rdf:rest>
+
+                                                                                                          </rdf:Description>
+                                                                                                        </rdf:rest>
+
+                                                                                                      </rdf:Description>
+                                                                                                    </rdf:rest>
+
+                                                                                                  </rdf:Description>
+                                                                                                </rdf:rest>
+
+                                                                                              </rdf:Description>
+                                                                                            </rdf:rest>
+
+                                                                                          </rdf:Description>
+                                                                                        </rdf:rest>
+
+                                                                                      </rdf:Description>
+                                                                                    </rdf:rest>
+
+                                                                                  </rdf:Description>
+                                                                                </rdf:rest>
+
+                                                                              </rdf:Description>
+                                                                            </rdf:rest>
+
+                                                                          </rdf:Description>
+                                                                        </rdf:rest>
+
+                                                                      </rdf:Description>
+                                                                    </rdf:rest>
+
+                                                                  </rdf:Description>
+                                                                </rdf:rest>
+
+                                                              </rdf:Description>
+                                                            </rdf:rest>
+
+                                                          </rdf:Description>
+                                                        </rdf:rest>
+
+                                                      </rdf:Description>
+                                                    </rdf:rest>
+
+                                                  </rdf:Description>
+                                                </rdf:rest>
+
+                                              </rdf:Description>
+                                            </rdf:rest>
+
+                                          </rdf:Description>
+                                        </rdf:rest>
+
+                                      </rdf:Description>
+                                    </rdf:rest>
+
+                                  </rdf:Description>
+                                </rdf:rest>
+
+                              </rdf:Description>
+                            </rdf:rest>
+
+                          </rdf:Description>
+                        </rdf:rest>
+
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:value>
+
+      </ns0:PropertyOrder>
+    </ns0:propertyOrder>
+
+    <ns0:feedbackRecipient>toimijakuvailu-posti@helsinki.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/finaf/finaf-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/finaf/finaf-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:finaf:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#geo">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">GEO - Geologian ontologia</dc:title>
+    <dc:title xml:lang="sv">GEO - Geologian ontologia</dc:title>
+    <dc:title xml:lang="en">GEO - Geologian ontologia</dc:title>
+    <ns0:shortName>GEO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_geo"/>
+    <void:uriSpace>http://www.yso.fi/onto/gtk/</void:uriSpace>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/gtk-meta/Concept"/>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/geo/geo-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/geo/geo-skos.rdf"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/gtk/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/gtk/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#gfdc">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">GFDC - Metsäalan kymmenluokittelu</dc:title>
+    <dc:title xml:lang="sv">GFDC - Skoglig decimalklassifikation</dc:title>
+    <dc:title xml:lang="en">GFDC - Global Forest Decimal Classification</dc:title>
+    <ns0:shortName>GFDC</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_science"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:gfdc:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:language>fr</ns0:language>
+    <ns0:language>de</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>sl</ns0:language>
+    <ns0:defaultLanguage>en</ns0:defaultLanguage>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:mainConceptScheme rdf:resource="http://urn.fi/URN:NBN:fi:au:gfdc:"/>
+    <ns0:indexShowClass rdf:resource="http://urn.fi/URN:NBN:fi:au:gfdc:GlossaryConcept"/>
+    <ns0:feedbackRecipient>jarmo.saarikko@luke.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/gfdc/gfdc-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/gfdc/gfdc-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:gfdc:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#hero">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">HERO - Heraldiikan ontologia</dc:title>
+    <dc:title xml:lang="sv">HERO - Heraldikens ontologi</dc:title>
+    <dc:title xml:lang="en">HERO - Ontology of Heraldry</dc:title>
+    <ns0:shortName>HERO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_culture"/>
+    <void:uriSpace>http://www.yso.fi/onto/hero/</void:uriSpace>
+    <ns0:feedbackRecipient>yrjo.kotivuori@arkisto.fi</ns0:feedbackRecipient>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>de</ns0:language>
+    <ns0:language>fr</ns0:language>
+    <ns0:language>sq</ns0:language>
+    <ns0:language>es</ns0:language>
+    <ns0:language>nl</ns0:language>
+    <ns0:language>it</ns0:language>
+    <ns0:language>hr</ns0:language>
+    <ns0:language>lv</ns0:language>
+    <ns0:language>lt</ns0:language>
+    <ns0:language>pl</ns0:language>
+    <ns0:language>ro</ns0:language>
+    <ns0:language>sr</ns0:language>
+    <ns0:language>da</ns0:language>
+    <ns0:language>cs</ns0:language>
+    <ns0:language>uk</ns0:language>
+    <ns0:language>hu</ns0:language>
+    <ns0:language>be</ns0:language>
+    <ns0:language>ru</ns0:language>
+    <ns0:language>et</ns0:language>
+    <ns0:language>ca</ns0:language>
+    <ns0:language>el</ns0:language>
+    <ns0:language>la</ns0:language>
+    <ns0:language>nb</ns0:language>
+    <ns0:language>pt</ns0:language>
+    <ns0:language>sk</ns0:language>
+    <ns0:language>bg</ns0:language>
+    <ns0:language>sl</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:fallbackLanguages>
+      <rdf:Description>
+        <rdf:first>en</rdf:first>
+        <rdf:rest>
+          <rdf:Description>
+            <rdf:first>fr</rdf:first>
+            <rdf:rest>
+              <rdf:Description>
+                <rdf:first>de</rdf:first>
+                <rdf:rest>
+                  <rdf:Description>
+                    <rdf:first>it</rdf:first>
+                    <rdf:rest>
+                      <rdf:Description>
+                        <rdf:first>es</rdf:first>
+                        <rdf:rest>
+                          <rdf:Description>
+                            <rdf:first>sv</rdf:first>
+                            <rdf:rest>
+                              <rdf:Description>
+                                <rdf:first>fi</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                              </rdf:Description>
+                            </rdf:rest>
+
+                          </rdf:Description>
+                        </rdf:rest>
+
+                      </rdf:Description>
+                    </rdf:rest>
+
+                  </rdf:Description>
+                </rdf:rest>
+
+              </rdf:Description>
+            </rdf:rest>
+
+          </rdf:Description>
+        </rdf:rest>
+
+      </rdf:Description>
+    </ns0:fallbackLanguages>
+
+    <ns0:usePlugin>hero</ns0:usePlugin>
+    <ns0:usePlugin>wiki</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/hero/hero-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/hero/hero-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/hero/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/hero/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#hklj">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">HKLJ -  Helsingin kaupunginkirjaston luokitusjärjestelmä</dc:title>
+    <dc:title xml:lang="sv">HSKS - Helsingfors stadsbiblioteks klassifikationssystem</dc:title>
+    <dc:title xml:lang="en">HCLCS - Helsinki City Library Classification System</dc:title>
+    <ns0:shortName>HKLJ</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:hklj:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:defaultSidebarView>hierarchy</ns0:defaultSidebarView>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:searchByNotation>true</ns0:searchByNotation>
+    <ns0:feedbackRecipient>marjut.puominen@hel.fi</ns0:feedbackRecipient>
+    <ns0:alphabeticalListQualifier rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/hklj/hklj-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/hklj/hklj-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:hklj:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ic">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Iconclass</dc:title>
+    <dc:title xml:lang="sv">Iconclass</dc:title>
+    <dc:title xml:lang="en">Iconclass</dc:title>
+    <ns0:shortName>Iconclass</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_culture"/>
+    <void:uriSpace>http://iconclass.org/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:language>fr</ns0:language>
+    <ns0:language>de</ns0:language>
+    <ns0:language>it</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>en</ns0:defaultLanguage>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ic/ic-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ic/ic-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://iconclass.org/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#jhsmeta">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">JHSmeta</dc:title>
+    <ns0:shortName>JHSmeta</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://jhsmeta.fi/skos/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/jhsmeta/jhsmeta-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/jhsmeta/jhsmeta-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://jhsmeta.fi/skos/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#iptc">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">IPTC NewsCodes</dc:title>
+    <dc:title xml:lang="sv">IPTC NewsCodes</dc:title>
+    <dc:title xml:lang="en">IPTC NewsCodes</dc:title>
+    <ns0:shortName>IPTC</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://cv.iptc.org/newscodes/subjectcode/</void:uriSpace>
+    <ns0:language>en</ns0:language>
+    <ns0:language>fi</ns0:language>
+    <ns0:defaultLanguage>en</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:mainConceptScheme rdf:resource="http://cv.iptc.org/newscodes/"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/iptc/iptc-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/iptc/iptc-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://cv.iptc.org/newscodes/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#iptc-scene">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">IPTC NewsCodes: Scene</dc:title>
+    <dc:title xml:lang="sv">IPTC NewsCodes: Scene</dc:title>
+    <dc:title xml:lang="en">IPTC NewsCodes: Scene</dc:title>
+    <ns0:shortName>IPTC-Scene</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://cv.iptc.org/newscodes/scene/</void:uriSpace>
+    <ns0:language>en</ns0:language>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/iptc-scene/iptc-scene-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/iptc-scene/iptc-scene-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://cv.iptc.org/newscodes/scene/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#iptc-subjectcode">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">IPTC NewsCodes: Subject Code</dc:title>
+    <dc:title xml:lang="sv">IPTC NewsCodes: Subject Code</dc:title>
+    <dc:title xml:lang="en">IPTC NewsCodes: Subject Code</dc:title>
+    <ns0:shortName>IPTC-Subject</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://cv.iptc.org/newscodes/subjectcode/</void:uriSpace>
+    <ns0:language>en</ns0:language>
+    <ns0:language>fi</ns0:language>
+    <ns0:defaultLanguage>en</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/iptc-subjectcode/iptc-subjectcode-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/iptc-subjectcode/iptc-subjectcode-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://cv.iptc.org/newscodes/subjectcode/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#juho">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">JUHO - Julkishallinnon ontologia</dc:title>
+    <dc:title xml:lang="sv">JUHO - Julkishallinnon ontologia</dc:title>
+    <dc:title xml:lang="en">JUHO - Julkishallinnon ontologia</dc:title>
+    <ns0:shortName>JUHO</ns0:shortName>
+    <ns0:marcSourceCode>juho</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/juho/</void:uriSpace>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/juho-meta/Concept"/>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:feedbackRecipient>pekka.kuittinen@vnk.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/juho/juho-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/juho/juho-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/juho/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/juho/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#jupo">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">JUPO - Julkisen hallinnon palveluontologia</dc:title>
+    <dc:title xml:lang="sv">JUPO - Ontologi för den offentliga sektorns tjänster</dc:title>
+    <dc:title xml:lang="en">JUPO - Finnish Ontology for Public Administration Services</dc:title>
+    <ns0:shortName>JUPO</ns0:shortName>
+    <ns0:marcSourceCode>jupo</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/jupo/</void:uriSpace>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/jupo-meta/Concept"/>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:feedbackRecipient>marko.latvanen@vrk.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/jupo/jupo-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/jupo/jupo-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/jupo/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/jupo/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#kassu">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Kassu - Kasvien suomenkieliset nimet</dc:title>
+    <dc:title xml:lang="sv">Kassu - Finska växtnamn</dc:title>
+    <dc:title xml:lang="en">Kassu - Finnish Names of Plants</dc:title>
+    <ns0:shortName>Kassu</ns0:shortName>
+    <ns0:marcSourceCode>kassu</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_science"/>
+    <void:uriSpace>http://www.yso.fi/onto/kassu/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:feedbackRecipient>leo.junikka@helsinki.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kassu/kassu-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kassu/kassu-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/kassu/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#kauno">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">KAUNO - fiktiivisen aineiston ontologia</dc:title>
+    <dc:title xml:lang="sv">KAUNO - ontologi för fiktivt material</dc:title>
+    <dc:title xml:lang="en">KAUNO - ontology for fiction</dc:title>
+    <ns0:shortName>KAUNO</ns0:shortName>
+    <ns0:marcSourceCode>kauno</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_lang"/>
+    <void:uriSpace>http://www.yso.fi/onto/kauno/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/kauno-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:groupClass rdf:resource="http://www.yso.fi/onto/kauno-meta/ConceptGroup"/>
+    <ns0:feedbackRecipient>yrjo.lindegren@hel.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kauno/kauno-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kauno/kauno-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/kauno/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/kauno/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#kaunokki">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">KAUNOKKI/BELLA - fiktiivisen aineiston sanasto</dc:title>
+    <dc:title xml:lang="sv">KAUNOKKI/BELLA - tesaurus för fiktivt material</dc:title>
+    <dc:title xml:lang="en">KAUNOKKI/BELLA - thesaurus for fiction</dc:title>
+    <ns0:shortName>KAUNOKKI/BELLA</ns0:shortName>
+    <ns0:marcSourceCode xml:lang="fi">kaunokki</ns0:marcSourceCode>
+    <ns0:marcSourceCode xml:lang="sv">bella</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_lang"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:kaunokki:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/kaunokki-meta/Concept"/>
+    <ns0:groupClass rdf:resource="http://www.yso.fi/onto/kaunokki-meta/ConceptGroup"/>
+    <ns0:feedbackRecipient>marjut.puominen@hel.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kaunokki/kaunokki-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kaunokki/kaunokki-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:kaunokki:"/>
+    <ns0:mainConceptScheme rdf:resource="http://urn.fi/URN:NBN:fi:au:kaunokki:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#keko">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">KEKO - Kestävän kehityksen kasvatuksen ontologia</dc:title>
+    <dc:title xml:lang="sv">KEKO - Ontologi för fostran i hållbar utveckling</dc:title>
+    <dc:title xml:lang="en">KEKO - Ontology for Education for Sustainable Development</dc:title>
+    <ns0:shortName>KEKO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/keko/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/keko-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:feedbackRecipient>katja.viberg@kierratyskeskus.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/keko/keko-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/keko/keko-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/keko/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/keko/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#kito">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">KITO - Kirjallisuudentutkimuksen ontologia</dc:title>
+    <dc:title xml:lang="sv">KITO - Kirjallisuudentutkimuksen ontologia</dc:title>
+    <dc:title xml:lang="en">KITO - Kirjallisuudentutkimuksen ontologia</dc:title>
+    <ns0:shortName>KITO</ns0:shortName>
+    <ns0:marcSourceCode>kito</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_lang"/>
+    <void:uriSpace>http://www.yso.fi/onto/kito/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/kito-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kito/kito-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kito/kito-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/kito/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/kito/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#koko">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">KOKO-ontologia</dc:title>
+    <dc:title xml:lang="sv">KOKO-ontologin</dc:title>
+    <dc:title xml:lang="en">KOKO Ontology</dc:title>
+    <ns0:shortName>KOKO</ns0:shortName>
+    <ns0:marcSourceCode>koko</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/koko/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/koko/koko-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/koko/koko-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/koko/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/koko/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#kokotesti">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">KOKO-testi</dc:title>
+    <dc:title xml:lang="sv">KOKO-test</dc:title>
+    <dc:title xml:lang="en">KOKO test</dc:title>
+    <ns0:shortName>KOKOtest</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/koko/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/koko/koko-skos_test.ttl"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/kokotest/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/koko/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#kto">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">KTO - Kielitieteen ontologia</dc:title>
+    <dc:title xml:lang="sv">KTO - Kielitieteen ontologia</dc:title>
+    <dc:title xml:lang="en">KTO - Kielitieteen ontologia</dc:title>
+    <ns0:shortName>KTO</ns0:shortName>
+    <ns0:marcSourceCode>kto</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_lang"/>
+    <void:uriSpace>http://www.yso.fi/onto/kto/</void:uriSpace>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/kto-meta/Concept"/>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kto/kto-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kto/kto-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:feedbackRecipient>anna-liisa.kristiansson@kotus.fi</ns0:feedbackRecipient>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/kto/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/kto/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#kulo">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">KULO - Kulttuurien tutkimuksen ontologia</dc:title>
+    <dc:title xml:lang="sv">KULO - Kulttuurien tutkimuksen ontologia</dc:title>
+    <dc:title xml:lang="en">KULO - Kulttuurien tutkimuksen ontologia</dc:title>
+    <ns0:shortName>KULO</ns0:shortName>
+    <ns0:marcSourceCode>kulo</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_culture"/>
+    <void:uriSpace>http://www.yso.fi/onto/kulo/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/kulo-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kulo/kulo-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/kulo/kulo-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/kulo/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/kulo/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#lajisto">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">LAJISTO - Lajitietokeskuksen lajiluettelo</dc:title>
+    <dc:title xml:lang="sv">LAJISTO - Artdatacentrets artlista</dc:title>
+    <dc:title xml:lang="en">LAJISTO - Species list of FinBIF</dc:title>
+    <ns0:shortName>LAJISTO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_science"/>
+    <void:uriSpace>http://tun.fi/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/lajisto/lajisto-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/lajisto/lajisto-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://tun.fi/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#oiko">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">OIKO - Oikeushallinnon ontologia</dc:title>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/oiko/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:shortName>OIKO</ns0:shortName>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/oiko-meta/Concept"/>
+    <ns0:indexShowClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:hasMultiLingualProperty rdf:resource="http://www.yso.fi/onto/oiko-meta/deprecatedLabel"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/oiko/oiko-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/oiko/oiko-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/oiko/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/oiko/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#lapponica">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Lapponica</dc:title>
+    <dc:title xml:lang="sv">Lapponica</dc:title>
+    <dc:title xml:lang="en">Lapponica</dc:title>
+    <ns0:shortName>Lapponica</ns0:shortName>
+    <ns0:marcSourceCode>lapponica</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:lapponica:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>se</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/lapponica/lapponica-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/lapponica/lapponica-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:lapponica:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#liito">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">LIITO - Liiketoimintaontologia</dc:title>
+    <dc:title xml:lang="sv">LIITO - Liiketoimintaontologia</dc:title>
+    <dc:title xml:lang="en">LIITO - Liiketoimintaontologia</dc:title>
+    <ns0:shortName>LIITO</ns0:shortName>
+    <ns0:marcSourceCode>liito</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/liito/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/liito-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:feedbackRecipient>eeva.koivisto@ely-keskus.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/liito/liito-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/liito/liito-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/liito/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/liito/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#lexvo">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Lexvo - ISO 639-3 kielikoodit</dc:title>
+    <dc:title xml:lang="sv">Lexvo - ISO 639-3 språkkoder</dc:title>
+    <dc:title xml:lang="en">Lexvo - ISO 639-3 language codes</dc:title>
+    <ns0:shortName>Lexvo</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_lang"/>
+    <void:uriSpace>http://lexvo.org/id/iso639-3/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>en</ns0:defaultLanguage>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/lexvo/lexvo-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/lexvo/lexvo-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://lexvo.org/id/iso639-3/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#maotao">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">MAO/TAO - Museoalan ja taideteollisuusalan ontologia</dc:title>
+    <dc:title xml:lang="sv">MAO/TAO - Ontologi för museibranschen och Konstindustriella ontologin</dc:title>
+    <dc:title xml:lang="en">MAO/TAO - Ontology for Museum Domain and Applied Arts</dc:title>
+    <ns0:shortName>MAO/TAO</ns0:shortName>
+    <ns0:marcSourceCode>maotao</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_culture"/>
+    <void:uriSpace>http://www.yso.fi/onto/tao/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:feedbackRecipient>hannele.dahl@museovirasto.fi</ns0:feedbackRecipient>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/mao-meta/Concept"/>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/tao-meta/Concept"/>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/maotao/maotao-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/maotao/maotao-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/tao/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/tao/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#mero">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">MERO - Merenkulkualan ontologia</dc:title>
+    <dc:title xml:lang="sv">MERO - Merenkulkualan ontologia</dc:title>
+    <dc:title xml:lang="en">MERO - Merenkulkualan ontologia</dc:title>
+    <ns0:shortName>MERO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/mero/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/mero-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/mero/mero-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/mero/mero-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/mero/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/mero/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#liiko">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">LIIKO - Liikenteen ontologia</dc:title>
+    <dc:title xml:lang="sv">LIIKO - Liikenteen ontologia</dc:title>
+    <dc:title xml:lang="en">LIIKO - Liikenteen ontologia</dc:title>
+    <ns0:shortName>LIIKO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/mero/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/mero-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/liiko/mero-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/liiko/mero-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/liiko/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/mero/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#mesh">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">MeSH / FinMeSH</dc:title>
+    <dc:title xml:lang="en">Medical Subject Headings</dc:title>
+    <dc:title xml:lang="sv">MeSH / SweMeSH</dc:title>
+    <ns0:shortName>MeSH</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_science"/>
+    <void:uriSpace>http://www.yso.fi/onto/mesh/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:feedbackRecipient>rosa.venalainen@helsinki.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/mesh/mesh-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/mesh/mesh-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/mesh/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#mts">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Metatietosanasto</dc:title>
+    <dc:title xml:lang="en">Metatietosanasto</dc:title>
+    <dc:title xml:lang="sv">Metatietosanasto</dc:title>
+    <ns0:shortName>Metatietosanasto</ns0:shortName>
+    <ns0:marcSourceCode>mts</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:mts:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:defaultSidebarView>groups</ns0:defaultSidebarView>
+    <ns0:groupClass rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <ns0:feedbackRecipient>kiti-vilkki.eriksson@helsinki.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/metatietosanasto/metatietosanasto-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/metatietosanasto/metatietosanasto-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:mts:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#slm">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Suomalainen lajityyppi- ja muotosanasto</dc:title>
+    <dc:title xml:lang="sv">Finländsk genre- och formlista</dc:title>
+    <ns0:shortName>SLM</ns0:shortName>
+    <ns0:marcSourceCode>slm</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:slm:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:feedbackRecipient>mirja.anttila@helsinki.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/slm/slm-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/slm/slm-skos.rdf"/>
+    <void:dataDump>
+      <rdf:Description rdf:about="http://dev.finto.fi/download/slm/slm-fin.mrcx">
+        <dc:format>application/marcxml+xml</dc:format>
+        <dc:language>fi</dc:language>
+      </rdf:Description>
+    </void:dataDump>
+
+    <void:dataDump>
+      <rdf:Description rdf:about="http://dev.finto.fi/download/slm/slm-swe.mrcx">
+        <dc:format>application/marcxml+xml</dc:format>
+        <dc:language>sv</dc:language>
+      </rdf:Description>
+    </void:dataDump>
+
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:mainConceptScheme rdf:resource="http://urn.fi/URN:NBN:fi:au:slm:"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:slm:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#slmtest">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Suomalainen lajityyppi- ja muotosanasto - käsiteskeemat piilotettu (testi)</dc:title>
+    <dc:title xml:lang="sv">Finländsk genre- och formlista (experiment)</dc:title>
+    <ns0:shortName>SLM (test)</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:slm:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:feedbackRecipient>mirja.anttila@helsinki.fi</ns0:feedbackRecipient>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:mainConceptScheme rdf:resource="http://urn.fi/URN:NBN:fi:au:slm:"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/slmtest/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#musa">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">MUSA - Musiikin asiasanasto</dc:title>
+    <dc:title xml:lang="sv">CILLA - Specialtesaurus för musik</dc:title>
+    <dc:title xml:lang="en">MUSA/CILLA - Finnish Music Thesaurus</dc:title>
+    <ns0:shortName>MUSA</ns0:shortName>
+    <ns0:marcSourceCode xml:lang="fi">musa/fin</ns0:marcSourceCode>
+    <ns0:marcSourceCode xml:lang="sv">cilla/swe</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_culture"/>
+    <void:uriSpace>http://www.yso.fi/onto/musa/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:usePlugin>musa</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/musa/musa-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/musa/musa-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/musa/"/>
+    <ns0:useParamPlugin>
+      <ns0:ParameterizedPlugin rdf:about="file://data/small/skosmos.ttl#musaMessage">
+        <ns0:usePlugin>message</ns0:usePlugin>
+        <ns0:parameters>
+          <schema:PropertyValue>
+            <schema:propertyID>msg</schema:propertyID>
+            <schema:value xml:lang="fi">Tämä on päivitettyä tietoa sisältävä testiviesti. &lt;a href='http://dev.finto.fi/yso/fi/'&gt;Linkki YSO:oon&lt;/a&gt;.</schema:value>
+            <schema:value xml:lang="sv">Det här är ett testmeddelande.</schema:value>
+            <schema:value>This is a test message.</schema:value>
+          </schema:PropertyValue>
+        </ns0:parameters>
+
+      </ns0:ParameterizedPlugin>
+    </ns0:useParamPlugin>
+
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#muso">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">MUSO - Musiikin ontologia</dc:title>
+    <dc:title xml:lang="sv">MUSO - Ontologi för musik</dc:title>
+    <dc:title xml:lang="en">MUSO - Ontology for Music</dc:title>
+    <ns0:shortName>MUSO</ns0:shortName>
+    <ns0:marcSourceCode>muso</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_culture"/>
+    <void:uriSpace>http://www.yso.fi/onto/muso/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/muso-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:feedbackRecipient>katerina.sornova@helsinki.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/muso/muso-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/muso/muso-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/muso/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/muso/"/>
+    <ns0:useParamPlugin>
+      <ns0:ParameterizedPlugin rdf:about="file://data/small/skosmos.ttl#musoMessage">
+        <ns0:usePlugin>message</ns0:usePlugin>
+        <ns0:parameters>
+          <schema:PropertyValue>
+            <schema:propertyID>msg</schema:propertyID>
+            <schema:value xml:lang="fi">Musiikin ontologia MUSO on yhdistetty Yleiseen suomalaiseen ontologiaan YSOon. MUSOa ei enää ylläpidetä eikä sen termejä päivitetä. Musiikkikirjallisuuden kuvailussa käytetään YSOn  käsitteitä. Uusia musiikkialan termejä voi ehdottaa YSOon ehdotusjärjestelmässä.</schema:value>
+            <schema:value xml:lang="sv">MUSO - ontologi för musik har uppgått i den allmänna finländska ontologin ALLFO. MUSO upprätthålls inte längre och termerna i den uppdateras inte. Vid beskrivning av musiklitteratur används ALLFO-begrepp. Nya termer gällande musik föreslås till ALLFO via förslagssystemet.</schema:value>
+            <schema:value>Vocabulary is no longer in use.</schema:value>
+          </schema:PropertyValue>
+        </ns0:parameters>
+
+      </ns0:ParameterizedPlugin>
+    </ns0:useParamPlugin>
+
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#okm-tieteenala">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Korkeakoulujen tutkimustiedonkeruussa käytettävä tieteenalaluokitus</dc:title>
+    <dc:title xml:lang="sv">Korkeakoulujen tutkimustiedonkeruussa käytettävä tieteenalaluokitus</dc:title>
+    <dc:title xml:lang="en">Korkeakoulujen tutkimustiedonkeruussa käytettävä tieteenalaluokitus</dc:title>
+    <ns0:shortName>OKM-tieteenala</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/okm-tieteenala/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/okm-tieteenala/okm-tieteenala-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/okm-tieteenala/okm-tieteenala-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/okm-tieteenala/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#paikat">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Paikannimirekisteri</dc:title>
+    <ns0:shortName>Paikat</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_geo"/>
+    <void:uriSpace>http://www.yso.fi/onto/paikat/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>sme</ns0:language>
+    <ns0:language>smn</ns0:language>
+    <ns0:language>sms</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/paikat/paikka-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/paikat/paikka-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/paikat/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#yso-paikat">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSO-paikat</dc:title>
+    <dc:title xml:lang="sv">ALLFO-orter</dc:title>
+    <dc:title xml:lang="en">YSO places</dc:title>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_geo"/>
+    <ns0:marcSourceCode xml:lang="fi">yso/fin</ns0:marcSourceCode>
+    <ns0:marcSourceCode xml:lang="sv">yso/swe</ns0:marcSourceCode>
+    <ns0:marcSourceCode xml:lang="en">yso/eng</ns0:marcSourceCode>
+    <void:uriSpace>http://www.yso.fi/onto/yso/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:usePlugin>wiki</ns0:usePlugin>
+    <ns0:usePlugin>suggestions</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso-paikat/yso-paikat-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso-paikat/yso-paikat-skos.rdf"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/yso-paikat-fin.mrcx"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/yso-paikat-swe.mrcx"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/yso-paikat/"/>
+  </ns0:Vocabulary>
+
+  <rdf:Description rdf:about="http://dev.finto.fi/download/yso-paikat/yso-paikat-fin.mrcx">
+    <dc:format>application/marcxml+xml</dc:format>
+    <dc:language>fi</dc:language>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://dev.finto.fi/download/yso-paikat/yso-paikat-swe.mrcx">
+    <dc:format>application/marcxml+xml</dc:format>
+    <dc:language>sv</dc:language>
+  </rdf:Description>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ponduskategorier">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Pondus-kategoriat</dc:title>
+    <dc:title xml:lang="sv">Ponduskategorier</dc:title>
+    <dc:title xml:lang="en">Pondus categories</dc:title>
+    <ns0:shortName>Pondus</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/ponduskategorier/</void:uriSpace>
+    <ns0:language>sv</ns0:language>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ponduskategorier/ponduskategorier-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ponduskategorier/ponduskategorier-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/ponduskategorier/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#pto-testi">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="en">PTO - Finnish Geospatial Domain Ontology Test Version</dc:title>
+    <dc:title xml:lang="fi">PTO - Paikkatieto-ontologian testiversio</dc:title>
+    <dc:title xml:lang="sv">PTO - Ontologi för geografisk information, testversion</dc:title>
+    <ns0:shortName>PTO-test</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_geo"/>
+    <void:uriSpace>http://paikkatiedot.fi/def/1001001/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:feedbackRecipient>Inspire@maanmittauslaitos.fi</ns0:feedbackRecipient>
+    <ns0:indexShowClass rdf:resource="http://paikkatiedot.fi/def/1001000/PaikhakConcept"/>
+    <ns0:indexShowClass rdf:resource="http://paikkatiedot.fi/def/1001000/TskConcept"/>
+    <ns0:indexShowClass rdf:resource="http://paikkatiedot.fi/def/1001000/InspireConcept"/>
+    <ns0:hasMultiLingualProperty rdf:resource="http://paikkatiedot.fi/def/1001000/deprecatedLabel"/>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:mainConceptScheme rdf:resource="http://paikkatiedot.fi/def/1001000/"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/pto/pto-skos-test.ttl"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/pto-test/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#pto">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="en">PTO - Finnish Geospatial Domain Ontology</dc:title>
+    <dc:title xml:lang="fi">PTO - Paikkatieto-ontologia</dc:title>
+    <dc:title xml:lang="sv">PTO - Ontologi för geografisk information</dc:title>
+    <ns0:shortName>PTO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_geo"/>
+    <void:uriSpace>http://paikkatiedot.fi/def/1001001/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:feedbackRecipient>Inspire@maanmittauslaitos.fi</ns0:feedbackRecipient>
+    <ns0:indexShowClass rdf:resource="http://paikkatiedot.fi/def/1001000/PaikhakConcept"/>
+    <ns0:indexShowClass rdf:resource="http://paikkatiedot.fi/def/1001000/TskConcept"/>
+    <ns0:indexShowClass rdf:resource="http://paikkatiedot.fi/def/1001000/InspireConcept"/>
+    <ns0:hasMultiLingualProperty rdf:resource="http://paikkatiedot.fi/def/1001000/deprecatedLabel"/>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:mainConceptScheme rdf:resource="http://paikkatiedot.fi/def/1001000/"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/pto/pto-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/pto/pto-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/pto/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ptvl">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Julkisten palvelujen luokitus</dc:title>
+    <dc:title xml:lang="sv">Julkisten palvelujen luokitus</dc:title>
+    <dc:title xml:lang="en">Julkisten palvelujen luokitus</dc:title>
+    <ns0:shortName>PTVL</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:ptvl:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:showTopConcepts>
+    <ns0:sortByNotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:sortByNotation>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <ns0:feedbackRecipient>marko.latvanen@vrk.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ptvl/ptvl-skos.ttl"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:ptvl:"/>
+    <ns0:mainConceptScheme rdf:resource="http://urn.fi/URN:NBN:fi:au:ptvl:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#puho">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">PUHO - Puolustushallinnon ontologia</dc:title>
+    <dc:title xml:lang="sv">PUHO - Puolustushallinnon ontologia</dc:title>
+    <dc:title xml:lang="en">PUHO - Puolustushallinnon ontologia</dc:title>
+    <ns0:shortName>PUHO</ns0:shortName>
+    <ns0:marcSourceCode>puho</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/puho/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/puho-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:feedbackRecipient>esa.i.hamalainen@mil.fi</ns0:feedbackRecipient>
+    <ns0:usePlugin>puho</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/puho/puho-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/puho/puho-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/puho/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/puho/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#soto">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">SOTO - Sotatieteen ontologia</dc:title>
+    <dc:title xml:lang="sv">SOTO - Sotatieteen ontologia</dc:title>
+    <dc:title xml:lang="en">SOTO - Sotatieteen ontologia</dc:title>
+    <ns0:shortName>SOTO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/soto/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/soto-meta/Concept"/>
+    <ns0:feedbackRecipient>esa.i.hamalainen@mil.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/soto/soto-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/soto/soto-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/soto/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/soto/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#sapo">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">SAPO - Suomen ajallinen paikkaontologia</dc:title>
+    <ns0:shortName>SAPO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_geo"/>
+    <void:uriSpace>http://www.yso.fi/onto/sapo/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/sapo/sapo-skos.ttl"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/sapo/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#seko">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">SEKO - Suomalainen esityskokoonpanosanasto</dc:title>
+    <ns0:shortName>SEKO</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_culture"/>
+    <void:uriSpace>http://urn.fi/urn:nbn:fi:au:seko:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/seko/seko-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/seko/seko-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/urn:nbn:fi:au:seko:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#tero">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">TERO - Terveyden ja hyvinvoinnin ontologia</dc:title>
+    <dc:title xml:lang="sv">TERO - Ontologi för hälsa och välfärd</dc:title>
+    <dc:title xml:lang="en">TERO - Finnish Ontology of Health and Welfare</dc:title>
+    <ns0:shortName>TERO</ns0:shortName>
+    <ns0:marcSourceCode>tero</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_science"/>
+    <void:uriSpace>http://www.yso.fi/onto/tero/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/tero-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:feedbackRecipient>johanna.eerola@thl.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/tero/tero-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/tero/tero-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/tero/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/tero/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#tsr">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">TSR-ontologia</dc:title>
+    <dc:title xml:lang="sv">TSR-ontologi</dc:title>
+    <dc:title xml:lang="en">TSR ontology</dc:title>
+    <ns0:shortName>TSR</ns0:shortName>
+    <ns0:marcSourceCode>tsr</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://www.yso.fi/onto/tsr/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:feedbackRecipient>viestinta@tsr.fi</ns0:feedbackRecipient>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/tsr-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/tsr/tsr-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/tsr/tsr-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/tsr/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/tsr/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ucum">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="en">UCUM - The Unified Code for Units of Measure</dc:title>
+    <ns0:shortName>UCUM</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:ucum:</void:uriSpace>
+    <ns0:groupClass rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <ns0:language>en</ns0:language>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:defaultLanguage>en</ns0:defaultLanguage>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ucum/ucum-skos.ttl"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:ucum:"/>
+    <ns0:mainConceptScheme rdf:resource="http://urn.fi/URN:NBN:fi:au:ucum:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#udcs">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Supistettu UDK</dc:title>
+    <dc:title xml:lang="sv">UDC Summary</dc:title>
+    <dc:title xml:lang="en">UDC Summary</dc:title>
+    <ns0:shortName>UDC Summary</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://udcdata.info/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>en</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:sortByNotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:sortByNotation>
+    <ns0:searchByNotation>true</ns0:searchByNotation>
+    <ns0:mainConceptScheme rdf:resource="http://udcdata.info/udc-schema"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/udcs/udcs-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/udcs/udcs-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://udcdata.info/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#valo">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">VALO - Valokuvausalan ontologia</dc:title>
+    <dc:title xml:lang="sv">VALO - Fotografiska ontologin</dc:title>
+    <dc:title xml:lang="en">VALO - The Finnish Ontology of Photography</dc:title>
+    <ns0:shortName>VALO</ns0:shortName>
+    <ns0:marcSourceCode>valo</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_culture"/>
+    <void:uriSpace>http://www.yso.fi/onto/valo/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:indexShowClass rdf:resource="http://www.yso.fi/onto/valo-meta/Concept"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:feedbackRecipient>elina.heikka@fmp.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/valo/valo-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/valo/valo-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/valo/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/valo/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ykl">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YKL - Yleisten kirjastojen luokitusjärjestelmä</dc:title>
+    <dc:title xml:lang="sv">KAB - Allmänna bibliotekens klassifikationssystem</dc:title>
+    <dc:title xml:lang="en">PLC - Finnish Public Libraries Classification System</dc:title>
+    <ns0:shortName>YKL</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:ykl:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:defaultSidebarView>hierarchy</ns0:defaultSidebarView>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:sortByNotation rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</ns0:sortByNotation>
+    <ns0:searchByNotation>true</ns0:searchByNotation>
+    <ns0:feedbackRecipient>marjut.puominen@hel.fi</ns0:feedbackRecipient>
+    <ns0:alphabeticalListQualifier rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ykl/ykl-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ykl/ykl-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:ykl:"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ysa">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSA - Yleinen suomalainen asiasanasto</dc:title>
+    <dc:title xml:lang="sv">YSA - Yleinen suomalainen asiasanasto</dc:title>
+    <dc:title xml:lang="en">YSA - General Finnish thesaurus</dc:title>
+    <ns0:shortName>YSA</ns0:shortName>
+    <ns0:marcSourceCode>ysa</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/ysa/</void:uriSpace>
+    <ns0:groupClass rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <ns0:language>fi</ns0:language>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:feedbackRecipient>vesa-posti@helsinki.fi</ns0:feedbackRecipient>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <ns0:usePlugin>ysallars</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ysa/ysa-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ysa/ysa-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/ysa/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ysapaikat">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSA + paikkarikastukset</dc:title>
+    <dc:title xml:lang="sv">YSA + platser</dc:title>
+    <dc:title xml:lang="en">YSA + places</dc:title>
+    <ns0:shortName>YSApaikat</ns0:shortName>
+    <ns0:marcSourceCode>ysa</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/ysa/</void:uriSpace>
+    <ns0:groupClass rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+    <ns0:language>fi</ns0:language>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#broadMatch"/>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#narrowMatch"/>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:feedbackRecipient>vesa-posti@helsinki.fi</ns0:feedbackRecipient>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/ysa/ysa-paikat-skos.ttl"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/ysa-paikat/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#yse">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSAn ja YSOn käsite-ehdotukset</dc:title>
+    <dc:title xml:lang="sv">YSAn ja YSOn käsite-ehdotukset</dc:title>
+    <dc:title xml:lang="en">YSAn ja YSOn käsite-ehdotukset</dc:title>
+    <ns0:shortName>YSE</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/ysa/</void:uriSpace>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:language>fi</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:feedbackRecipient>vesa-posti@helsinki.fi</ns0:feedbackRecipient>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yse/yse-skos.ttl"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/yse/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#yso">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSO - Yleinen suomalainen ontologia</dc:title>
+    <dc:title xml:lang="sv">ALLFO - Allmän finländsk ontologi</dc:title>
+    <dc:title xml:lang="en">YSO - General Finnish ontology</dc:title>
+    <ns0:shortName xml:lang="fi">YSO</ns0:shortName>
+    <ns0:shortName xml:lang="sv">ALLFO</ns0:shortName>
+    <ns0:shortName xml:lang="en">YSO</ns0:shortName>
+    <ns0:marcSourceCode xml:lang="fi">yso/fin</ns0:marcSourceCode>
+    <ns0:marcSourceCode xml:lang="sv">yso/swe</ns0:marcSourceCode>
+    <ns0:marcSourceCode xml:lang="en">yso/eng</ns0:marcSourceCode>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/yso/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <ns0:usePlugin>suggestions</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/yso-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/yso-skos.rdf"/>
+    <void:dataDump>
+      <rdf:Description rdf:about="http://dev.finto.fi/download/yso/yso-fin.mrcx">
+        <dc:format>application/marcxml+xml</dc:format>
+        <dc:language>fi</dc:language>
+      </rdf:Description>
+    </void:dataDump>
+
+    <void:dataDump>
+      <rdf:Description rdf:about="http://dev.finto.fi/download/yso/yso-swe.mrcx">
+        <dc:format>application/marcxml+xml</dc:format>
+        <dc:language>sv</dc:language>
+      </rdf:Description>
+    </void:dataDump>
+
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/yso/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/yso/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ysoaristoteles">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSO - Yleinen suomalainen ontologia, Aristoteles-versio</dc:title>
+    <dc:title xml:lang="sv">ALLFO - Allmän finländsk ontologi, Aristoteles version</dc:title>
+    <dc:title xml:lang="en">YSO - General Finnish ontology, Aristotle version</dc:title>
+    <ns0:shortName xml:lang="fi">YSO-A</ns0:shortName>
+    <ns0:shortName xml:lang="sv">ALLFO-A</ns0:shortName>
+    <ns0:shortName xml:lang="en">YSO-A</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/yso/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:feedbackRecipient>kk-info@helsinki.fi</ns0:feedbackRecipient>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/releases/2017.1.Aristoteles/yso-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/releases/2017.1.Aristoteles/yso-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/yso-aristoteles/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/yso/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ysoboethius">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSO - Yleinen suomalainen ontologia, Boethius-versio</dc:title>
+    <dc:title xml:lang="sv">ALLFO - Allmän finländsk ontologi, Boethius version</dc:title>
+    <dc:title xml:lang="en">YSO - General Finnish ontology, Boethius version</dc:title>
+    <ns0:shortName xml:lang="fi">YSO-B</ns0:shortName>
+    <ns0:shortName xml:lang="sv">ALLFO-B</ns0:shortName>
+    <ns0:shortName xml:lang="en">YSO-B</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/yso/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/releases/2018.3.Boethius/yso-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/releases/2018.3.Boethius/yso-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/yso-boethius/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/yso/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ysocicero">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSO - Yleinen suomalainen ontologia, Cicero-versio</dc:title>
+    <dc:title xml:lang="sv">ALLFO - Allmän finländsk ontologi, Cicero version</dc:title>
+    <dc:title xml:lang="en">YSO - General Finnish ontology, Cicero version</dc:title>
+    <ns0:shortName xml:lang="fi">YSO-C</ns0:shortName>
+    <ns0:shortName xml:lang="sv">ALLFO-C</ns0:shortName>
+    <ns0:shortName xml:lang="en">YSO-C</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/yso/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/releases/2019.3.Cicero/yso-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/releases/2019.3.Cicero/yso-skos.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/yso-cicero/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/yso/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ysodiotima">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSO - Yleinen suomalainen ontologia, Diotima-versio</dc:title>
+    <dc:title xml:lang="sv">ALLFO - Allmän finländsk ontologi, Diotima version</dc:title>
+    <dc:title xml:lang="en">YSO - General Finnish ontology, Diotima version</dc:title>
+    <ns0:shortName xml:lang="fi">YSO-D</ns0:shortName>
+    <ns0:shortName xml:lang="sv">ALLFO-D</ns0:shortName>
+    <ns0:shortName xml:lang="en">YSO-D</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/yso/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/releases/2020.1.Diotima/yso-skos.ttl"/>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/yso/releases/2020.1.Diotima/ysoKehitys.rdf"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/yso-diotima/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/yso/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#ysotietomalliuudistus">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">YSO - Yleinen suomalainen ontologia, tietomalliuudistus (testi)</dc:title>
+    <dc:title xml:lang="sv">ALLFO - Allmän finländsk ontologi, uppdatering av datamodellen (experiment)</dc:title>
+    <dc:title xml:lang="en">YSO - General Finnish ontology, data model update (test)</dc:title>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_general"/>
+    <void:uriSpace>http://www.yso.fi/onto/yso/</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:showTopConcepts>true</ns0:showTopConcepts>
+    <ns0:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+    <ns0:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+    <ns0:showChangeList>true</ns0:showChangeList>
+    <ns0:showPropertyInSearch rdf:resource="http://www.w3.org/2004/02/skos/core#note"/>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:usePlugin>finna</ns0:usePlugin>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://www.yso.fi/onto/yso-tietomalliuudistus/"/>
+    <ns0:mainConceptScheme rdf:resource="http://www.yso.fi/onto/yso/"/>
+  </ns0:Vocabulary>
+
+  <ns0:Vocabulary rdf:about="file://data/small/skosmos.ttl#tt">
+    <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+    <dc:title xml:lang="fi">Tietotermit</dc:title>
+    <dc:title xml:lang="en">Tietotermit</dc:title>
+    <dc:title xml:lang="sv">Tietotermit</dc:title>
+    <ns0:shortName>TT</ns0:shortName>
+    <dc:subject rdf:resource="file://data/small/skosmos.ttl#cat_society"/>
+    <void:uriSpace>http://urn.fi/URN:NBN:fi:au:tt:</void:uriSpace>
+    <ns0:language>fi</ns0:language>
+    <ns0:language>sv</ns0:language>
+    <ns0:language>en</ns0:language>
+    <ns0:useModifiedDate>true</ns0:useModifiedDate>
+    <ns0:defaultLanguage>fi</ns0:defaultLanguage>
+    <ns0:usePlugin>tieto</ns0:usePlugin>
+    <ns0:feedbackRecipient>sanastot@lingsoft.fi</ns0:feedbackRecipient>
+    <ns0:fullAlphabeticalIndex>true</ns0:fullAlphabeticalIndex>
+    <void:dataDump rdf:resource="http://dev.finto.fi/download/tt/tieto-skos.ttl"/>
+    <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+    <ns0:sparqlGraph rdf:resource="http://urn.fi/URN:NBN:fi:au:tt:"/>
+  </ns0:Vocabulary>
+
+  <skos:ConceptScheme rdf:about="file://data/small/skosmos.ttl#categories">
+    <skos:prefLabel xml:lang="fi">Sanastot ja ontologiat</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">Tillgängliga tesaurusar och ontologier</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Available vocabularies and ontologies</skos:prefLabel>
+  </skos:ConceptScheme>
+
+  <skos:Concept rdf:about="file://data/small/skosmos.ttl#cat_general">
+    <skos:topConceptOf rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:inScheme rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:prefLabel xml:lang="fi">Yleiset</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">Allmän</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">General</skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="file://data/small/skosmos.ttl#cat_society">
+    <skos:topConceptOf rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:inScheme rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:prefLabel xml:lang="fi">Yhteiskunta</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">Samhälle</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Society</skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="file://data/small/skosmos.ttl#cat_geo">
+    <skos:topConceptOf rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:inScheme rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:prefLabel xml:lang="fi">Maantiede ja paikkatieto</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">Geografi och geografisk information</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Geography and geoinformation</skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="file://data/small/skosmos.ttl#cat_science">
+    <skos:topConceptOf rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:inScheme rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:prefLabel xml:lang="fi">Luonnontieteet ja lääketiede</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">Naturvetenskap och medicin</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Science and medicine</skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="file://data/small/skosmos.ttl#cat_culture">
+    <skos:topConceptOf rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:inScheme rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:prefLabel xml:lang="fi">Taide ja kulttuuri</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">Konst och kultur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Art and culture</skos:prefLabel>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="file://data/small/skosmos.ttl#cat_lang">
+    <skos:topConceptOf rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:inScheme rdf:resource="file://data/small/skosmos.ttl#categories"/>
+    <skos:prefLabel xml:lang="fi">Kielet ja kirjallisuus</skos:prefLabel>
+    <skos:prefLabel xml:lang="sv">Språk och litteratur</skos:prefLabel>
+    <skos:prefLabel xml:lang="en">Languages and literature</skos:prefLabel>
+  </skos:Concept>
+
+</rdf:RDF>
