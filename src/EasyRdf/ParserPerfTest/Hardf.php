@@ -51,7 +51,7 @@ class Hardf implements ParserPerfTestInterface {
     static private $formats = [
         'ttl'      => 'turtle',
         'trig'     => 'trig',
-        'ntriples' => 'triple',
+        'ntriples' => 'turtle',
         'n3'       => 'n3',
     ];
 
