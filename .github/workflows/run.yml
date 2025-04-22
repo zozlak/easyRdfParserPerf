@@ -6,7 +6,7 @@ jobs:
   small:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: shivammathur/setup-php@v2
       with:
         php-version: '7.4'
@@ -24,7 +24,7 @@ jobs:
   medium:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: shivammathur/setup-php@v2
       with:
         php-version: '7.4'
@@ -42,7 +42,7 @@ jobs:
   big:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: shivammathur/setup-php@v2
       with:
         php-version: '7.4'
@@ -64,7 +64,7 @@ jobs:
     - big
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: cache R packages
       uses: actions/cache@v2
       with:
